@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 350vh;
+    overflow-x: hidden;
+}
+div{
+    position: relative;
+
+}
+/* ---------------------------------------navBar */
+.navBar{
+    margin-top: 0px;
+    height: 65px;
+    width: 100%;
+    top: 0;
+    background-color: rgba(20, 48, 81);
+}
+.navEsquerda{
+    position: absolute;
+    display: flex;
+    align-items:center;
+    width: 20%;
+    top: -45px;
+    margin-left: 3%;
+}
+.navDireita{
+    top: 15px;
+    right: 18%;
+    position: absolute;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width: 60%;
+}
+.textNav{
+    top: 5px;
+font-size: 20px;
+color: white;
+position: relative;
+font-family: 'Nunito';
+}
+
+#imgNav{
+    width: 170px;
+    height: 170px;
+    top: 4px;
+    position: relative;
+}
+#hrNav{
+    position: relative;
+   top: -10px;
+    width: 40px;
+    transform: rotate(90deg);
+    border-color: white;
+}
+/* ------------------------------------barra de rolagem */
+
+
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba( 20,48,81);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3.5px solid rgba( 20,48,81);  /* creates padding around scroll thumb */
+  }
+
+
+/* -------Fazendo o Botão de login------- */
+#login{
+    position: absolute;
+    top: 2px;
+    right: -240px;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgba(191, 143, 91, 1) ;
+    color: rgba( 20,48,81);
+    border: 3px;
+    border-color: transparent;
+    border-radius:20px;
+    border-style: solid;
+    font-family: 'Nunito';
+    font-weight: bold; 
+    }
+
+#login:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+    color: rgba(191, 143, 91, 1);
+    border-color:rgba(191, 143, 91, 1);
+    cursor: pointer;
+    transition: 0.5s;}
+    
+/*.rodape{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(20, 48, 81);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}*/
+
+
+/*----------------------CARROSSEL------------------------------*/
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    
+    }
+    
+    .carrossel{
+    
+    width: 100%;
+    height: 700px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    top: -49.95px;
+    
+    
+    }
+    
+    .carrossel ul{
+    
+        display: flex;
+        list-style: none;
+        width: 800px;
+        height: 700px;
+        
+    
+    
+    }
+    
+    .carrossel li{
+    position:relative;
+    animation: slide 15s infinite alternate ease-out;
+    
+    }
+
+    .carrossel img{
+
+
+        height: 700px;
+    }
+    
+    @keyframes slide{
+    
+    
+    0%{left: 0px}
+    10%{left: -2170px;}
+    20%{left: -4340px;}
+    30%{left: -6510px}
+
+    50%{left: -4340px}
+    
+    80%{left: -2170px;}
+
+    100%{left: 0px;}
+    }
+    
+/*-------------------FIM DO CARROSSEL--------------------------*/
+
+/*------------------------------CARD 1 O QUE SOMOS-----------------------*/
+.card1{
+    bottom: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+    color: black;
+    background-color: #e6e6e8 ;
+}
+.card1 h1{
+    color: black;
+    font-size: 45px;
+}
+.card1 p{
+    color: black;
+    font-size: 23px;
+}
+.somos{
+    width: 90%;
+    height: 70vh;
+    justify-content: space-around;
+    justify-self: center;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    background-color: #f1f5f5;
+}
+.somos img{
+    height: 55vh;
+    width: 85vh;   
+}
+.hr1{
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    border: none
+}
+.titulo{
+    color: black;
+    font-size: 40px;
+}
+.conteudo1{
+    position: relative;
+    display: flex;
+    justify-self: flex-end;
+    height: 65vh;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.043) ;
+    border-radius: 20px;
+    color: white;
+}
+{
+    border-radius: 20px;
+}
+
+/*------------------------------CARD 2 VALORES-----------------------*/
+.card2{bottom: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+    color: black;
+    background-color: rgba( 20,48,81) ;
+}
+
+.valores{ width: 90%;
+    height: 70vh;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-items: center;
+    background-color:transparent;
+    border-radius: 20px;
+    display: flex;
+}
+
+section img{
+    height: 55vh;
+    width: 85vh;
+    color: white;
+    border-radius: 20px;
+}
+
+.conteudo2{
+    display: flex;
+    height: 65vh;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.043) ;
+    border-radius: 20px;
+    color: white;
+}
+
+.card2 h1{ padding-top: 20px;
+    padding-left: 40px;
+    font-size: 40px;
+    float: right;}
+
+.card2 p{}
+    
+    
