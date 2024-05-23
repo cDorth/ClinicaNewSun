@@ -1,143 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
-
+/*HANUMAM*/        @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+/*POPPINS*/        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*ARVO*/        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ /*SANCHEZ*/       @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@0;1&display=swap');
 .hanuman-thin {
-    font-family: "Hanuman", serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .hanuman-light {
-    font-family: "Hanuman", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .hanuman-regular {
-    font-family: "Hanuman", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .hanuman-bold {
-    font-family: "Hanuman", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .hanuman-black {
-    font-family: "Hanuman", serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-
-
-
-
-body,html{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 350vh;
-    overflow-x: hidden;
+  font-family: "Hanuman", serif;
+  font-weight: 100;
+  font-style: normal;
 }
-div{
-    position: relative;
+
+.hanuman-light {
+  font-family: "Hanuman", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hanuman-regular {
+  font-family: "Hanuman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hanuman-bold {
+  font-family: "Hanuman", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hanuman-black {
+  font-family: "Hanuman", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 350vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+div {
+  position: relative;
 
 }
+
 /*-------NAV BAR-------------------------------------------------------------------------------------*/
-.navBar{
-    margin-top: 0px;
-    height: 65px;
-    width: 100%;
-    top: 0;
-    background-color: rgba(20, 48, 81);
+.navBar {
+  margin-top: 0px;
+  height: 65px;
+  width: 100%;
+  top: 0;
+  background-color: rgba(20, 48, 81);
 }
-.navEsquerda{
-    position: absolute;
-    display: flex;
-    align-items:center;
-    width: 20%;
-    top: -45px;
-    margin-left: 3%;
+
+.navEsquerda {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 20%;
+  top: -45px;
+  margin-left: 3%;
 }
-.navDireita{
-    top: 15px;
-    right: 18%;
-    position: absolute;
-    display: flex;
-    align-items:center;
-    justify-content:space-evenly;
-    width: 60%;
+
+.navDireita {
+  top: 15px;
+  right: 18%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
 }
-.textNav{
-    top: 5px;
+
+.textNav {
+top: 5px;
 font-size: 20px;
 color: white;
 position: relative;
-font-family: 'Nunito';
+font-family: 'arvo';
 }
 
-#imgNav{
-    width: 170px;
-    height: 170px;
-    top: 4px;
-    position: relative;
+
+#imgNav {
+  width: 170px;
+  height: 170px;
+  top: 4px;
+  position: relative;
 }
-#hrNav{
-    position: relative;
-   top: -10px;
-    width: 40px;
-    transform: rotate(90deg);
-    border-color: white;
+
+#hrNav {
+  position: relative;
+  top: -10px;
+  width: 40px;
+  transform: rotate(90deg);
+  border-color: white;
 }
 
 /* ------------------------------------barra de rolagem */
 
 
 body::-webkit-scrollbar {
-    width: 10px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: rgba( 20,48,81);        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3.5px solid rgba( 20,48,81);  /* creates padding around scroll thumb */
-  }
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(20, 48, 81);
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3.5px solid rgba(20, 48, 81);
+  /* creates padding around scroll thumb */
+}
 
 
 /* -------Fazendo o Botão de login------- */
 #login{
-    position: absolute;
-    top: 2px;
-    right: -240px;
-    width: 90px;
-    height: 30px;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    background-color:rgba(191, 143, 91, 1) ;
-    color: rgba( 20,48,81);
-    border: 3px;
-    border-color: transparent;
-    border-radius:20px;
-    border-style: solid;
-    font-family: 'Nunito';
-    font-weight: bold; 
-    }
+  position: absolute;
+  right: -240px;
+  top: 0.1px;
+  width: 14vh;
+  height: 40px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-color:rgba(191, 143, 91, 1) ;
+  color: rgba( 20,48,81);
+  font-size: 20px;
+  border: 3px;
+  border-color: transparent;
+  border-radius:20px;
+  border-style: solid;
+  font-family: 'arvo';
+  font-weight: bold; 
+  }
 
 #login:hover{
-    transform: scale(1.1);
-    background-color: transparent;
-    color: rgba(191, 143, 91, 1);
-    border-color:rgba(191, 143, 91, 1);
-    cursor: pointer;
-    transition: 0.5s;}
-    
+  transform: scale(1.1);
+  background-color: transparent;
+  color: rgba(191, 143, 91, 1);
+  border-color:rgba(191, 143, 91, 1);
+  cursor: pointer;
+  transition: 0.5s;}
+
 /*.rodape{
     height: 100px;
     width: 100%;
@@ -149,41 +166,463 @@ body::-webkit-scrollbar {
 
 /*---------------------------------------------------------------------*/
 
-
+.botoes{
+  width: 60%;
+  height: 400px;
+  margin-left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-items: center;
+  -ms-wrap-margin: 30px;
+ 
+}
 /*-----------------BOTOES DAS ESPECIALIDADES-------------------*/
-#retina{
-
-    position: relative;
-    top: 160px;
-    right: -20px;
-    width: 180px;
-    height: 30px;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    background-color:rgb(20, 48, 81)
-     ;
-    color: rgb(255, 255, 255);
-    border: 3px;
-    border-color: transparent;
-    border-radius:20px;
+a{
+font-style: none;
+sty
+}
+#retina {
+  margin-left: 30px;
+  position: relative;
+  width:  300px;
+  height: 50px;
+  padding-block: 17px;
+  padding-inline: 150px;
+  background-color: rgb(20, 48, 81);
+  color: rgb(255, 255, 255);
+  border: 3px;
+  border-color: transparent;
+  border-radius: 20px;
 
 
 
 }
 
-#retina:hover{
-    transform: scale(1.2);
-    background-color:transparent;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba( 20,48,81);
-    color: rgba( 20,48,81);
-    
-    
-    border-color:rgb(20, 48, 81);
-    cursor: pointer;
-    transition: 0.5s;
+#retina:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(20, 48, 81);
+  color: rgba(20, 48, 81);
+
+
+  border-color: rgb(20, 48, 81);
+  cursor: pointer;
+  transition: 0.2s;
 
 }
-    
+
+
+#catarata {
+  margin-left: 30px;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(20, 48, 81);
+  color: rgb(255, 255, 255);
+  border: 3px;
+  border-color: transparent;
+  border-radius: 20px;
+
+
+
+}
+
+#catarata:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(20, 48, 81);
+  color: rgba(20, 48, 81);
+
+
+  border-color: rgb(20, 48, 81);
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+
+#glaucoma {
+  margin-left: 30px;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(20, 48, 81);
+  color: rgb(255, 255, 255);
+  border: 3px;
+  border-color: transparent;
+  border-radius: 20px;
+
+
+
+}
+
+#glaucoma:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(20, 48, 81);
+  color: rgba(20, 48, 81);
+
+
+  border-color: rgb(20, 48, 81);
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+
+#oftalmopediatria {
+  margin-left: 30px;
+  margin-top: 20px;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(20, 48, 81);
+  color: rgb(255, 255, 255);
+  border: 3px;
+  border-color: transparent;
+  border-radius: 20px;
+
+
+
+}
+
+#oftalmopediatria:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(20, 48, 81);
+  color: rgba(20, 48, 81);
+
+
+  border-color: rgb(20, 48, 81);
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+#refrativa {
+  margin-left: 30px;
+  margin-top: 20px;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(20, 48, 81);
+  color: rgb(255, 255, 255);
+  border: 3px;
+  border-color: transparent;
+  border-radius: 20px;
+
+
+
+}
+
+#refrativa:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(20, 48, 81);
+  color: rgba(20, 48, 81);
+
+
+  border-color: rgb(20, 48, 81);
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+#cornea{
+  margin-left: 30px;
+  margin-top: 20px;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(20, 48, 81);
+  color: rgb(255, 255, 255);
+  border: 3px;
+  border-color: transparent;
+  border-radius: 20px;
+
+
+
+}
+
+#cornea:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(20, 48, 81);
+  color: rgba(20, 48, 81);
+
+
+  border-color: rgb(20, 48, 81);
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+
+#miopia{
+  margin-top: 20px;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(20, 48, 81);
+  color: rgb(255, 255, 255);
+  border: 3px;
+  border-color: transparent;
+  border-radius: 20px;
+margin-left: 200px;
+
+
+}
+
+#miopia:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(20, 48, 81);
+  color: rgba(20, 48, 81);
+
+
+  border-color: rgb(20, 48, 81);
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+
+#hipermetropia{
+  margin-left: 30px;
+  margin-top: 20px;
+  position: relative;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(20, 48, 81);
+  color: rgb(255, 255, 255);
+  border: 3px;
+  border-color: transparent;
+  border-radius: 20px;
+
+
+
+}
+
+#hipermetropia:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(20, 48, 81);
+  color: rgba(20, 48, 81);
+  border-color: rgb(20, 48, 81);
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+
+/*-----------------FIM ----------------------------------------------------BOTOES DAS ESPECIALIDADES-------------------*/
+/* --------Retina------ */
+.Doenças{
+  top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  color: black;
+  background-color: #e6e6e8 ;
+}
+.Doenças h1{
+  padding-top: 99px;
+  padding-left: 25px;
+  color: rgba( 20,48,81);
+  font-size: 45px;
+  font-family: 'Hanuman';
+}
+.Doenças p{
+  width: 90%;
+  text-indent: 30px;
+  text-align: justify;
+  padding-left: 25px;
+  color: rgb(0, 0, 0);
+  font-size: 23px;
+  font-family: 'Hanuman';}
+
+.Retina{
+  width: 80%;
+  height: 45vh;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+}
+
+.conteudo1{
+  height: 65vh;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.043) ;
+  border-radius: 20px;
+  color: white;
+}
+
+
+.Catarata{
+  width: 80%;
+  height: 45vh;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+}
+
+.conteudo2{
+  height: 65vh;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.043) ;
+  border-radius: 20px;
+  color: white;
+}
+
+.Glaucoma{
+  width: 80%;
+  height: 45vh;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+}
+
+.conteudo3{
+  height: 65vh;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.043) ;
+  border-radius: 20px;
+  color: white;
+}
+
+
+.Oftalmopediatria{
+  width: 80%;
+  height: 45vh;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+}
+
+.conteudo4{
+  height: 65vh;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.043) ;
+  border-radius: 20px;
+  color: white;
+}
+
+.Refrativa{
+  width: 80%;
+  height: 45vh;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+}
+
+.conteudo5{
+  height: 65vh;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.043) ;
+  border-radius: 20px;
+  color: white;
+}
+
+.Cornea{
+  width: 80%;
+  height: 45vh;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+}
+
+.conteudo6{
+  height: 65vh;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.043) ;
+  border-radius: 20px;
+  color: white;
+}
+
+
+
+.miopia{
+  width: 80%;
+  height: 45vh;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+}
+
+.conteudo7{
+  height: 65vh;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.043) ;
+  border-radius: 20px;
+  color: white;
+}
+
+
+
+.Hipermetropia{
+  width: 80%;
+  height: 45vh;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+}
+
+.conteudo8{
+  height: 65vh;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.043) ;
+  border-radius: 20px;
+  color: white;
+}
+
+
