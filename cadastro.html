@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Tela de login</title>
+</head>
+<body>
+    <!-- --------------------------------------------------------navBar -->
+    <header>
+        <div class="navBar">
+            <div class="navEsquerda"> 
+            <div >
+                <img src="imagens/newSun.png" id="imgNav">
+                </div>
+                <div>
+                    <hr id="hrNav">
+                </div>
+            </div>
+            <h1 id="navBem">Bem vindo</h1>
+            <img src="imagens/iconLogout.png" id="iconLogout">
+        </div>       
+    </header> 
+    <!-- --------------------------------------------------------form -->
+    <div class="container">
+        <div class="fundo">
+
+            <div class="esquerda">
+             <form id="form">
+                <label for="nome"><img src="imagens/iconPessoa.png" alt="" id="iconPessoa"></label>
+                <input type="password" id="nome" name="nome" placeholder="Digite seu Nome" required></br>
+
+
+                <label for="email"><img src="imagens/iconEmail.png" alt="" id="iconEmail"></label>
+                    <input type="text" id="email" name="email" placeholder="E-mail" required></br>
+
+                    <label for="senha"><img src="imagens/iconCadeado.png" alt="" id="iconSenha"></label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required></br>
+
+                    
+                    <label for="senha"><img src="imagens/iconCadeado.png" alt="" id="iconConfSenha"></label>
+                    <input type="password" id="confSenha" name="confSenha" placeholder="Confirmar Senha" required>
+
+
+
+             </form>
+                    <div class="btns">
+                            <button id="entrar" type="submit" form="form" value="Submit">Entrar</button>
+                    </div> 
+                </div>
+        <div class="direita">
+
+        </div>
+       
+
+    </div>
+</div>
+</body>
+</html>

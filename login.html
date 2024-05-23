@@ -25,13 +25,24 @@
     <!-- --------------------------------------------------------form -->
     <div class="container">
         <div class="fundo">
-    <form>
-    <label for="email"><img src="imagens/iconEmail.png" alt="" id="iconEmail"></label>
-    <input type="text" id="email" name="email" placeholder="E-mail">
 
-    <label><input type="text" id="senha" name="" placeholder="Senha"><label>
+
+        <div class="esquerda">
+
+        </div>
+        <div class="direita">
+    <form id="form">
+    <label for="email"><img src="imagens/iconEmail.png" alt="" id="iconEmail"></label>
+        <input type="text" id="email" name="email" placeholder="E-mail" required></br>
+    <label for="senha"><img src="imagens/iconCadeado.png" alt="" id="iconSenha"></label>
+        <input type="password" id="senha" name="senha" placeholder="Senha" required>
+
+        <div class="btns">
+                <button id="cadastrar">Cadastrar</button>
+                <button id="entrar" type="submit" form="form" value="Submit">Entrar</button>
+        </div>        
     </form>
-</div>
+    </div>
 </div>
 </body>
 </html>

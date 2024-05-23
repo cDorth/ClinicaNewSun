@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+
+.hanuman-thin {
+    font-family: "Hanuman", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .hanuman-light {
+    font-family: "Hanuman", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .hanuman-regular {
+    font-family: "Hanuman", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .hanuman-bold {
+    font-family: "Hanuman", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .hanuman-black {
+    font-family: "Hanuman", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+
+
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 350vh;
+    overflow-x: hidden;
+}
+div{
+    position: relative;
+
+}
+/*-------NAV BAR-------------------------------------------------------------------------------------*/
+.navBar{
+    margin-top: 0px;
+    height: 65px;
+    width: 100%;
+    top: 0;
+    background-color: rgba(20, 48, 81);
+}
+.navEsquerda{
+    position: absolute;
+    display: flex;
+    align-items:center;
+    width: 20%;
+    top: -45px;
+    margin-left: 3%;
+}
+.navDireita{
+    top: 15px;
+    right: 18%;
+    position: absolute;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width: 60%;
+}
+.textNav{
+    top: 5px;
+font-size: 20px;
+color: white;
+position: relative;
+font-family: 'Nunito';
+}
+
+#imgNav{
+    width: 170px;
+    height: 170px;
+    top: 4px;
+    position: relative;
+}
+#hrNav{
+    position: relative;
+   top: -10px;
+    width: 40px;
+    transform: rotate(90deg);
+    border-color: white;
+}
+
+/* ------------------------------------barra de rolagem */
+
+
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba( 20,48,81);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3.5px solid rgba( 20,48,81);  /* creates padding around scroll thumb */
+  }
+
+
+/* -------Fazendo o Botão de login------- */
+#login{
+    position: absolute;
+    top: 2px;
+    right: -240px;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgba(191, 143, 91, 1) ;
+    color: rgba( 20,48,81);
+    border: 3px;
+    border-color: transparent;
+    border-radius:20px;
+    border-style: solid;
+    font-family: 'Nunito';
+    font-weight: bold; 
+    }
+
+#login:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+    color: rgba(191, 143, 91, 1);
+    border-color:rgba(191, 143, 91, 1);
+    cursor: pointer;
+    transition: 0.5s;}
+    
+/*.rodape{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(20, 48, 81);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}*/
+
+/*---------------------------------------------------------------------*/
+
+
+/*-----------------BOTOES DAS ESPECIALIDADES-------------------*/
+#retina{
+
+    position: relative;
+    top: 160px;
+    right: -20px;
+    width: 180px;
+    height: 30px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(20, 48, 81)
+     ;
+    color: rgb(255, 255, 255);
+    border: 3px;
+    border-color: transparent;
+    border-radius:20px;
+
+
+
+}
+
+#retina:hover{
+    transform: scale(1.2);
+    background-color:transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba( 20,48,81);
+    color: rgba( 20,48,81);
+    
+    
+    border-color:rgb(20, 48, 81);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+    

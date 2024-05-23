@@ -1,6 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+
+.hanuman-thin {
+    font-family: "Hanuman", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .hanuman-light {
+    font-family: "Hanuman", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .hanuman-regular {
+    font-family: "Hanuman", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .hanuman-bold {
+    font-family: "Hanuman", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .hanuman-black {
+    font-family: "Hanuman", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+
+
+
+
 body,html{
     margin: 0;
     padding: 0;
@@ -132,7 +165,7 @@ body::-webkit-scrollbar {
     margin: 50px auto;
     overflow: hidden;
     position: relative;
-    top: -49.95px;
+    top: -60px;
     
     
     }
@@ -150,7 +183,7 @@ body::-webkit-scrollbar {
     
     .carrossel li{
     position:relative;
-    animation: slide 15s infinite alternate ease-out;
+    animation: slide 15s infinite normal ease;
     
     }
 
@@ -174,9 +207,28 @@ body::-webkit-scrollbar {
 
     100%{left: 0px;}
     }
+
+    
     
 /*-------------------FIM DO CARROSSEL--------------------------*/
 
+/*---------------CORES DO SITE--------------------------
+
+CORES PRINCIAIS
+
+        Azul Escuro: #143051
+        Azul Claro: #84B6F4
+        Azul Claro bem branco: #E3EEF6
+        Botão Login: #BF8F5B
+        Cards: #6A9EDA ( 5% de transparencia )
+
+ESPECIALIDADES
+
+        Azul das Especialidades: #84B6F4 ( 80% de transparencia )
+        Cards: #6A9EDA ( 5% de transparencia )
+
+
+*/
 /*------------------------------CARD 1 O QUE SOMOS-----------------------*/
 .card1{
     bottom: 30vh;
@@ -189,49 +241,46 @@ body::-webkit-scrollbar {
     background-color: #e6e6e8 ;
 }
 .card1 h1{
-    color: black;
+    padding-top: 10px;
+    padding-left: 25px;
+    color: rgba( 20,48,81);
     font-size: 45px;
+    font-family: 'Hanuman';
 }
-.card1 p{
-    color: black;
+.card1 p,ul{
+    text-indent: 30px;
+    text-align: justify;
+    padding-top: 10px;
+    padding-left: 25px;
+    color: rgb(0, 0, 0);
     font-size: 23px;
-}
+    font-family: 'Hanuman';}
+
 .somos{
     width: 90%;
     height: 70vh;
-    justify-content: space-around;
+    justify-content: space-evenly;
     justify-self: center;
     align-items: center;
+    background-color: #fff;
     border-radius: 20px;
     display: flex;
-    background-color: #f1f5f5;
 }
-.somos img{
+.imagem1{
     height: 55vh;
-    width: 85vh;   
+    width: 85vh;
 }
-.hr1{
-    width: 100%;
-    height: 20px;
-    background-color: transparent;
-    border: none
-}
+
 .titulo{
     color: black;
     font-size: 40px;
 }
 .conteudo1{
-    position: relative;
-    display: flex;
-    justify-self: flex-end;
     height: 65vh;
     width: 40%;
     background-color: rgba(255, 255, 255, 0.043) ;
     border-radius: 20px;
     color: white;
-}
-{
-    border-radius: 20px;
 }
 
 /*------------------------------CARD 2 VALORES-----------------------*/
@@ -263,7 +312,6 @@ section img{
 }
 
 .conteudo2{
-    display: flex;
     height: 65vh;
     width: 40%;
     background-color: rgba(255, 255, 255, 0.043) ;
@@ -271,11 +319,34 @@ section img{
     color: white;
 }
 
-.card2 h1{ padding-top: 20px;
-    padding-left: 40px;
-    font-size: 40px;
-    float: right;}
+.card2 h1{
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-family: 'Hanuman';
+}
+.card2 p,ul{
+    text-align: inherit;
+    text-indent: 20px;
+    padding-top: 10px;
+    padding-left: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-family: 'Hanuman';}
 
-.card2 p{}
+.card2 ul{padding-left: 50px;}
     
-    
+/*------------------------------------MÉDICOS--------------------------------*/
+
+.faixa-med{bottom: 30vh;
+    width: 100%;
+    height: 12vh;
+    background-image:url(imagens/decoracao_login.png) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+}
