@@ -14,6 +14,10 @@ body{
    background-size: cover;
 
 }
+
+a{
+    text-decoration: none;
+}
 /* -----------------------------------------------------------------navBar */
 
 
@@ -129,7 +133,7 @@ body{
         font-size: 20px;
         border-style: solid;
     }
-    #cadastrar{
+    #cadastrar a{
         background-color: #E3EEF6;
         border-color: #143051;
         color: #143051;

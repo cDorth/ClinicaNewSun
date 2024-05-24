@@ -166,7 +166,7 @@ body::-webkit-scrollbar-thumb {
 
 /*---------------------------------------------------------------------*/
 
-.botoes{
+.especialidades{
   width: 60%;
   height: 400px;
   margin-left: 20%;
@@ -178,256 +178,72 @@ body::-webkit-scrollbar-thumb {
  
 }
 /*-----------------BOTOES DAS ESPECIALIDADES-------------------*/
-a{
-font-style: none;
-sty
+.a{
+text-decoration: none;
 }
-#retina {
-  margin-left: 30px;
+#retina, #catarata,#glaucoma,#oftalmopediatria,#refrativa,#cornea,#miopia,#hipermetropia{
   position: relative;
-  width:  300px;
-  height: 50px;
+  background-color: rgb(20, 48, 81);
+  color: rgb(255, 255, 255);
+  border: 3px;
+  border-color: transparent;
+  border-radius: 20px;
+}
+
+#retina:hover,#catarata:hover,#glaucoma:hover,#oftalmopediatria:hover,#refrativa:hover,#cornea:hover,#miopia:hover,#hipermetropia:hover{
+  transform: scale(1.1);
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(20, 48, 81);
+  color: rgba(20, 48, 81);
+  border-color: rgb(20, 48, 81);
+  cursor: pointer;
+  transition: 0.2s;
+}
+#retina{
   padding-block: 17px;
-  padding-inline: 150px;
-  background-color: rgb(20, 48, 81);
-  color: rgb(255, 255, 255);
-  border: 3px;
-  border-color: transparent;
-  border-radius: 20px;
+  padding-inline: 130px;
+}
+#catarata{
+  padding-block: 17px;
+  padding-inline: 124.24px;
+}
+#glaucoma{
+  padding-block: 17px;
+  padding-inline: 118.0159px;
+}
 
+#oftalmopediatria{
 
+  padding-block: 17px;
+  padding-inline: 96.24px;
 
 }
 
-#retina:hover {
-  transform: scale(1.2);
-  background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(20, 48, 81);
-  color: rgba(20, 48, 81);
+#refrativa{
 
-
-  border-color: rgb(20, 48, 81);
-  cursor: pointer;
-  transition: 0.2s;
-
-}
-
-
-#catarata {
-  margin-left: 30px;
-  position: relative;
-  width: 300px;
-  height: 50px;
-  background-color: rgb(20, 48, 81);
-  color: rgb(255, 255, 255);
-  border: 3px;
-  border-color: transparent;
-  border-radius: 20px;
-
-
-
-}
-
-#catarata:hover {
-  transform: scale(1.2);
-  background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(20, 48, 81);
-  color: rgba(20, 48, 81);
-
-
-  border-color: rgb(20, 48, 81);
-  cursor: pointer;
-  transition: 0.2s;
-
-}
-
-
-#glaucoma {
-  margin-left: 30px;
-  position: relative;
-  width: 300px;
-  height: 50px;
-  background-color: rgb(20, 48, 81);
-  color: rgb(255, 255, 255);
-  border: 3px;
-  border-color: transparent;
-  border-radius: 20px;
-
-
-
-}
-
-#glaucoma:hover {
-  transform: scale(1.2);
-  background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(20, 48, 81);
-  color: rgba(20, 48, 81);
-
-
-  border-color: rgb(20, 48, 81);
-  cursor: pointer;
-  transition: 0.2s;
-
-}
-
-
-#oftalmopediatria {
-  margin-left: 30px;
-  margin-top: 20px;
-  position: relative;
-  width: 300px;
-  height: 50px;
-  background-color: rgb(20, 48, 81);
-  color: rgb(255, 255, 255);
-  border: 3px;
-  border-color: transparent;
-  border-radius: 20px;
-
-
-
-}
-
-#oftalmopediatria:hover {
-  transform: scale(1.2);
-  background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(20, 48, 81);
-  color: rgba(20, 48, 81);
-
-
-  border-color: rgb(20, 48, 81);
-  cursor: pointer;
-  transition: 0.2s;
-
-}
-
-#refrativa {
-  margin-left: 30px;
-  margin-top: 20px;
-  position: relative;
-  width: 300px;
-  height: 50px;
-  background-color: rgb(20, 48, 81);
-  color: rgb(255, 255, 255);
-  border: 3px;
-  border-color: transparent;
-  border-radius: 20px;
-
-
-
-}
-
-#refrativa:hover {
-  transform: scale(1.2);
-  background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(20, 48, 81);
-  color: rgba(20, 48, 81);
-
-
-  border-color: rgb(20, 48, 81);
-  cursor: pointer;
-  transition: 0.2s;
+  padding-block: 17px;
+  padding-inline: 121.13px;
 
 }
 
 #cornea{
-  margin-left: 30px;
-  margin-top: 20px;
-  position: relative;
-  width: 300px;
-  height: 50px;
-  background-color: rgb(20, 48, 81);
-  color: rgb(255, 255, 255);
-  border: 3px;
-  border-color: transparent;
-  border-radius: 20px;
 
-
+  padding-block: 17px;
+  padding-inline: 127.79px;
 
 }
-
-#cornea:hover {
-  transform: scale(1.2);
-  background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(20, 48, 81);
-  color: rgba(20, 48, 81);
-
-
-  border-color: rgb(20, 48, 81);
-  cursor: pointer;
-  transition: 0.2s;
-
-}
-
 
 #miopia{
-  margin-top: 20px;
-  position: relative;
-  width: 300px;
-  height: 50px;
-  background-color: rgb(20, 48, 81);
-  color: rgb(255, 255, 255);
-  border: 3px;
-  border-color: transparent;
-  border-radius: 20px;
-margin-left: 200px;
-
+  padding-block: 17px;
+  padding-inline: 127.79px;
 
 }
-
-#miopia:hover {
-  transform: scale(1.2);
-  background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(20, 48, 81);
-  color: rgba(20, 48, 81);
-
-
-  border-color: rgb(20, 48, 81);
-  cursor: pointer;
-  transition: 0.2s;
-
-}
-
 
 #hipermetropia{
-  margin-left: 30px;
-  margin-top: 20px;
-  position: relative;
-  width: 300px;
-  height: 50px;
-  background-color: rgb(20, 48, 81);
-  color: rgb(255, 255, 255);
-  border: 3px;
-  border-color: transparent;
-  border-radius: 20px;
-
-
-
-}
-
-#hipermetropia:hover {
-  transform: scale(1.2);
-  background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(20, 48, 81);
-  color: rgba(20, 48, 81);
-  border-color: rgb(20, 48, 81);
-  cursor: pointer;
-  transition: 0.2s;
+  padding-block: 17px;
+  padding-inline: 104.24px;
 
 }
 
@@ -625,4 +441,7 @@ margin-left: 200px;
   color: white;
 }
 
+.Doenças svg{
+  float: right;
+  }
 

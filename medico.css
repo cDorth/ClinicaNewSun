@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-image: url(imagens/decoracao_login.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   backdrop-filter: blur(12px);
+
+}
+/* -----------------------------------------------------------------navBar */
+
+
+.navBar{
+    margin-top: 0px;
+    height: 65px;
+    width: 100%;
+    top: 0;
+    background-color: rgba(20, 48, 81);
+    
+
+}
+#imgNav{
+    width: 170px;
+    height: 170px;
+    top: 4px;
+    position: relative;
+}
+#hrNav{
+    position: relative;
+    top: -10px;
+    width: 40px;
+    transform: rotate(90deg);
+    border-color: white;
+}
+.navEsquerda{
+    position: absolute;
+    display: flex;
+    align-items:center;
+    width: 20%;
+    top: -45px;
+    margin-left: 3%;
+}
+#iconLogout{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 30px;
+}
+#navBem{font-family: 'hanuman';
+    color: white;
+    position: absolute;
+    left: 48%;
+    top: 10px;
+
+}
+.container{
+  position: absolute;
+  top:65px;
+  left: -30px;
+}
+.menu-click{
+  position: absolute;
+  z-index: 1000;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container .checkbox-menu{
+  position: absolute;
+  z-index: 999;
+  width: 35px;
+  height: 35px;
+}
+.container .checkbox-menu span{
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
