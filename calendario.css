@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 80%;
+    width: 40%;
+    border: solid 1px #143051;
+}
+.calendario-head{
+    background-color: #143051;
+    color: white;
+    font-size: 40px;
+    height: 6vh;
+    width: 100%;
+}
+.calendario-body{
+    background-color: yellowgreen;
+    font-size: 35px;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dia-semana{
+    height: 35px;
+    width: 14.2%;
+    display: flex;
+    justify-content: center;
+}
+/* ----- CALENDARIO MESMO ------*/
+.calendario-foot{
+    background-color: palegoldenrod;
+    height: 23vh;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*-------------------- DIAS E SEMANAS ----------- */
+.dia{
+    display: inline-block;
+    justify-content: center;    
+    text-align: center;
+    font-size: 30px;
+    width: 14.28%;
+    border: none;
+}
+.dia:hover{
+    background-color: #143051;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+}
+/*#apagar{
+    display: inline-block;
+    justify-content: center;    
+    text-align: center;
+    font-size: 30px;
+    height: 30px;
+    width: 14.28%;
+    border: 1px solid transparent;
+    color: transparent;
+}*/
+.semana1{
+    height: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.semana2{
+    height: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.semana3{
+    height: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+}
+.semana4{
+    height: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.semana5{
+    height: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}

@@ -445,3 +445,75 @@ text-decoration: none;
   float: right;
   }
 
+/* --------------------------RODAPE------------------- */
+
+
+footer{
+  background: url(imagens/fundo-rodape.png);
+  color: #ffffff;
+  
+}
+.rodape1{
+  height:35vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  top: 10px;
+}
+
+.rodape h1{
+  font-family: 'Sanchez';
+  font-size: 5.5vh;
+}
+
+.rodape p{
+  font-family: 'arvo';
+  font-size: 2.2vh;
+  
+}
+
+.hr-space{
+  height: 0.01vh;
+  width: 78%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  top: 20px;
+  bottom: 20px;
+}
+
+.rodape2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+.conv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.convenios{
+  width: 78%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* RODAPE REDES SOCIAIS */
+
+.icones img{
+  height: 6vh;
+  width: 3vw;
+}
+
+/* ICONES CONVENIOS */
+.convenios img{
+  height: 8vh;
+  width: 8vw;
+}

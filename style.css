@@ -41,6 +41,7 @@
 head{
     overflow: hidden;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -329,8 +330,11 @@ ESPECIALIDADES
     display: flex;
 }
 .imagem1{
-    height: 55vh;
-    width: 85vh;
+    height: 55px;
+    width: 85px;
+  
+   
+    
 }
 
 .titulo{
@@ -390,11 +394,12 @@ ESPECIALIDADES
     font-family: 'arvo';
 }
 .card2 p,ul{
-    text-align: inherit;
-    text-indent: 20px;
+    width: 40.8ch;
+    text-indent: 30px;
+    text-align: justify;
     padding-top: 10px;
-    padding-left: 25px;
-    color: rgb(255, 255, 255);
+    padding-left: 15px;
+    color:white;
     font-size: 23px;
     font-family: 'arvo';}
 
@@ -423,7 +428,7 @@ ESPECIALIDADES
     font-family: 'arvo';
 }
 .card3 p{
-    width: 44.8ch;
+    width: 40.8ch;
     text-indent: 30px;
     text-align: justify;
     padding-top: 10px;
@@ -499,19 +504,26 @@ ESPECIALIDADES
 .medico1 .medico1_texto {
     visibility: hidden;
     width: 46vh;
-    height: 50vh;
+    height: 51.4vh;
     background-color: rgba( 20,48,81);
     color:white;
     text-align: center;
     padding: 5px 0;
-    border-radius: 1px;
     position: absolute;
     z-index: 1;
-    bottom:2vh;
-    border-radius: 10%;
+    bottom:1vh;
+    border-radius: 5%;
   }
   .medico1 .medico1_texto p{
-    font-size: 30px;
+    width: 23ch;
+    text-indent: 18px;
+    padding-left: 12px;
+    text-align: justify;
+    padding-top: 9px;
+    color:fff;
+    font-size: 25px;
+    font-family: 'arvo';
+
   }
   
   .medico1:hover .medico1_texto {
@@ -523,19 +535,26 @@ ESPECIALIDADES
   .medico2 .medico2_texto {
     visibility: hidden;
     width: 46vh;
-    height: 50vh;
+    height: 51.4vh;
     background-color: rgba( 20,48,81);
     color:white;
     text-align: center;
     padding: 5px 0;
-    border-radius: 1px;
     position: absolute;
     z-index: 1;
-    bottom:2vh;
-    border-radius: 10%;
+    bottom:1vh;
+    border-radius: 5%;
   }
   .medico2 .medico2_texto p{
-    font-size: 30px;
+    width: 23ch;
+    text-indent: 18px;
+    padding-left: 12px;
+    text-align: justify;
+    padding-top: 9px;
+    color:fff;
+    font-size: 25px;
+    font-family: 'arvo';
+
   }
   
   .medico2:hover .medico2_texto {
@@ -547,19 +566,26 @@ ESPECIALIDADES
   .medico3 .medico3_texto {
     visibility: hidden;
     width: 46vh;
-    height: 50vh;
+    height: 51.4vh;
     background-color: rgba( 20,48,81);
     color:white;
     text-align: center;
     padding: 5px 0;
-    border-radius: 1px;
     position: absolute;
     z-index: 1;
-    bottom:2vh;
-    border-radius: 10%;
+    bottom:1vh;
+    border-radius: 5%;
   }
   .medico3 .medico3_texto p{
+    width: 23ch;
+    text-indent: 18px;
+    padding-left: 12px;
+    text-align: justify;
+    padding-top: 9px;
+    color:fff;
     font-size: 25px;
+    font-family: 'arvo';
+
   }
   
   .medico3:hover .medico3_texto {
@@ -570,19 +596,26 @@ ESPECIALIDADES
   .medico4 .medico4_texto {
     visibility: hidden;
     width: 46vh;
-    height: 50vh;
+    height: 51.4vh;
     background-color: rgba( 20,48,81);
     color:white;
     text-align: center;
     padding: 5px 0;
-    border-radius: 1px;
     position: absolute;
     z-index: 1;
-    bottom:2vh;
-    border-radius: 10%;
+    bottom:1vh;
+    border-radius: 5%;
   }
   .medico4 .medico4_texto p{
-    font-size: 30px;
+    width: 23ch;
+    text-indent: 18px;
+    padding-left: 12px;
+    text-align: justify;
+    padding-top: 9px;
+    color:fff;
+    font-size: 25px;
+    font-family: 'arvo';
+
   }
   
   .medico4:hover .medico4_texto {
@@ -594,7 +627,7 @@ ESPECIALIDADES
 /* --------------------------RODAPE------------------- */
 
 footer{
-    background-color: rgba(20, 48, 81);
+    background: url(imagens/fundo-rodape.png);
     color: #ffffff;
 }
 
@@ -610,41 +643,44 @@ footer{
 }
 .rodape h1{
     font-family: 'Sanchez';
-    font-size: 42px;
+    font-size: 5.5vh;
 }
 .rodape p{
     font-family: 'arvo';
-    font-size: 20px;
+    font-size: 2.2vh;
 }
 
-.hr-espaco{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 .hr-space{
-    height: 0.4vh;
+    height: 0.01vh;
     width: 78%;
     background-color: rgb(255, 255, 255);
     border: none;
-    top: 10px;
-    bottom: 10px;
+    top: 20px;
+    bottom: 20px;
 }
 
-.copyright{
+.rodape2{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 25px;
 }
-.convenios{
+.conv{
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
+.convenios{
+    width: 78%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 /* RODAPE REDES SOCIAIS */
 
@@ -655,6 +691,6 @@ footer{
 
 /* ICONES CONVENIOS */
 .convenios img{
-    height: 6vh;
-    width: 6vw;
+    height: 8vh;
+    width: 8vw;
 }
