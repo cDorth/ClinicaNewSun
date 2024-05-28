@@ -513,23 +513,31 @@ ESPECIALIDADES
     z-index: 1;
     bottom:1vh;
     border-radius: 5%;
+    transition: all ease 5s;
+    
   }
-  .medico1 .medico1_texto p{
-    width: 23ch;
-    text-indent: 18px;
-    padding-left: 12px;
-    text-align: justify;
+  .medico1 .medico1_texto p,ul{
+    text-align: left;
+    width: 28ch;
     padding-top: 9px;
     color:fff;
     font-size: 25px;
     font-family: 'arvo';
-
+    transition: all ease 5s;
   }
+
+  .medico1_texto ul{padding-left: 30px;
+    transition: all ease 5s;}
+
+  .medico1_texto li{
+    padding-top: 15px;
+    padding-right: 100px;
+    transition: all ease 5s;}
   
   .medico1:hover .medico1_texto {
     visibility: visible;
+    transition: all ease 5s;
   }
-
 /* --------Médico 2-------- */
 
   .medico2 .medico2_texto {
@@ -549,7 +557,7 @@ ESPECIALIDADES
     width: 23ch;
     text-indent: 18px;
     padding-left: 12px;
-    text-align: justify;
+    text-align: left;
     padding-top: 9px;
     color:fff;
     font-size: 25px;
@@ -580,7 +588,7 @@ ESPECIALIDADES
     width: 23ch;
     text-indent: 18px;
     padding-left: 12px;
-    text-align: justify;
+    text-align: left;
     padding-top: 9px;
     color:fff;
     font-size: 25px;
@@ -610,7 +618,7 @@ ESPECIALIDADES
     width: 23ch;
     text-indent: 18px;
     padding-left: 12px;
-    text-align: justify;
+    text-align: left;
     padding-top: 9px;
     color:fff;
     font-size: 25px;
@@ -643,13 +651,19 @@ footer{
 }
 .rodape h1{
     font-family: 'Sanchez';
-    font-size: 5.5vh;
+    font-size: 42px;
 }
 .rodape p{
     font-family: 'arvo';
-    font-size: 2.2vh;
+    font-size: 18px;
 }
 
+.hr-espaco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .hr-space{
     height: 0.01vh;
     width: 78%;

@@ -1,0 +1,184 @@
+/*HANUMAM*/        @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+/*POPPINS*/        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*ARVO*/        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ /*SANCHEZ*/       @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@0;1&display=swap');
+
+/* --------------------------FUNDO DO BODY---------------------- */
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+   background-image: url(imagens/decoracao_home_med.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   backdrop-filter: blur(12px);
+   background-color:rgba(20, 48, 81);
+   overflow: hidden;
+
+}
+
+/* -----------------------------------------------------------------navBar */
+ .hanuman-thin {
+    font-family: "Hanuman", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .hanuman-light {
+    font-family: "Hanuman", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .hanuman-regular {
+    font-family: "Hanuman", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .hanuman-bold {
+    font-family: "Hanuman", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .hanuman-black {
+    font-family: "Hanuman", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+
+
+
+head{
+    overflow: hidden;
+}
+
+
+div{
+    position: relative;
+
+
+
+}
+
+
+.a-link{
+
+color: white;
+text-decoration: none;
+
+}
+
+.login-link{
+    color: rgba( 20,48,81);
+    text-decoration: none;}
+    .login-link:hover{
+        color: rgba(191, 143, 91, 1);
+        text-decoration: none;}
+/* ---------------------------------------navBar */
+.navBar{
+    margin-top: 0px;
+    height: 65px;
+    width: 100%;
+    top: 0;
+    background-color: rgba(20, 48, 81);
+}
+.navEsquerda{
+    position: absolute;
+    display: flex;
+    align-items:center;
+    width: 20%;
+    top: -45px;
+    margin-left: 3%;
+}
+.navDireita{
+    top: 15px;
+    right: 18%;
+    position: absolute;
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width: 60%;
+}
+.textNav{
+    top: 5px;
+font-size: 20px;
+color: white;
+position: relative;
+font-family: 'arvo';
+}
+
+#imgNav{
+    width: 170px;
+    height: 170px;
+    top: 4px;
+    position: relative;
+}
+#hrNav{
+    position: relative;
+   top: -10px;
+    width: 40px;
+    transform: rotate(90deg);
+    border-color: white;
+}
+
+#iconLogout{
+    right: -240px;
+    top: 0.1px;
+    width: 1vh;
+    height: 0.5px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+/* ------------------------------------barra de rolagem */
+
+
+body::-webkit-scrollbar {
+    width: 10px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba( 20,48,81);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);   
+    border-radius: 20px;       
+    border: 3px solid rgba( 20,48,81);  
+  }
+
+/* -------Fazendo o Botão de login------- */
+#login{
+    position: absolute;
+    right: -240px;
+    top: 0.1px;
+    width: 14vh;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgba(191, 143, 91, 1) ;
+    color: rgb(20, 48, 81);
+    font-size: 20px;
+    border: 3px;
+    border-color: transparent;
+    border-radius:20px;
+    border-style: solid;
+    font-family: 'arvo';
+    font-weight: bold; 
+    }
+
+#login:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+    color: rgba(191, 143, 91, 1);
+    border-color:rgba(191, 143, 91, 1);
+    cursor: pointer;
+    transition: 0.5s;}  
+/* BOAS VINDAS - PERFIL DO MEDICO */
+

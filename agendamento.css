@@ -1,0 +1,70 @@
+.a{
+    text-decoration: none;
+    }
+    #retina, #catarata,#glaucoma,#oftalmopediatria,#refrativa,#cornea,#miopia,#hipermetropia{
+      position: relative;
+      background-color: rgb(20, 48, 81);
+      color: rgb(255, 255, 255);
+      border: 3px;
+      border-color: transparent;
+      border-radius: 20px;
+    }
+    
+    #retina:hover,#catarata:hover,#glaucoma:hover,#oftalmopediatria:hover,#refrativa:hover,#cornea:hover,#miopia:hover,#hipermetropia:hover{
+      transform: scale(1.1);
+      background-color: transparent;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgba(20, 48, 81);
+      color: rgba(20, 48, 81);
+      border-color: rgb(20, 48, 81);
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    #retina{
+      padding-block: 17px;
+      padding-inline: 130px;
+    }
+    #catarata{
+      padding-block: 17px;
+      padding-inline: 124.24px;
+    }
+    #glaucoma{
+      padding-block: 17px;
+      padding-inline: 118.0159px;
+    }
+    
+    #oftalmopediatria{
+    
+      padding-block: 17px;
+      padding-inline: 96.24px;
+    
+    }
+    
+    #refrativa{
+    
+      padding-block: 17px;
+      padding-inline: 121.13px;
+    
+    }
+    
+    #cornea{
+    
+      padding-block: 17px;
+      padding-inline: 127.79px;
+    
+    }
+    
+    #miopia{
+      padding-block: 17px;
+      padding-inline: 127.79px;
+    
+    }
+    
+    #hipermetropia{
+      padding-block: 17px;
+      padding-inline: 104.24px;
+    
+    }
+    
+    

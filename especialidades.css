@@ -35,6 +35,30 @@
 
 
 
+.a-link{
+
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  
+  }
+
+  
+.login-link{
+
+  color: rgba( 20,48,81);
+  text-decoration: none;
+  
+  }
+
+ 
+
+
+  .login-link:hover{
+      color: rgba(191, 143, 91, 1);
+      text-decoration: none;
+      
+    }
+
 
 
 body {
@@ -145,6 +169,7 @@ body::-webkit-scrollbar-thumb {
   border-style: solid;
   font-family: 'arvo';
   font-weight: bold; 
+  text-decoration: none;
   }
 
 #login:hover{
