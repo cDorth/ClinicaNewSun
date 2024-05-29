@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paciente</title>
-    <link rel="stylesheet" href="paciente.css">
-    <link rel="icon" href="imagens/newSun.png" type="image/png" sizes="100x100">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
+    <link rel="stylesheet" href="medico.css">
+    <title>Home Paciente</title>
 </head>
-
 <body>
-
+    <!-- --------------------------------------------------------navBar -->
     <header>
         <div class="navBar">
-            <div class="navEsquerda">
-                <div>
-                    <img src="imagens/newSun.png" id="imgNav">
+            <div class="navEsquerda"> 
+                <div class="container">
+    
+                    <input type="checkbox" class="menu-click">
+                <label class="checkbox-menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+             
+                <ul>
+                    <label for="inicial" ><div class="btnckI"></div></label>
+                    <label for="consultas" ><div class="btnckC"></div></label>
+                    <label for="pacientes"><div class="btnckP"></div></label>
+                    <a href="" class="contNav">Inicial</a>
+                    <a href="" class="contNav">Consultas</a>
+                    <a href="" class="contNav">Agendar Consulta</a>
+                </ul>
+        
+            </div>
+            <div >
+                <img src="imagens/newSun.png" id="imgNav">
                 </div>
                 <div>
                     <hr id="hrNav">
                 </div>
             </div>
-            <div class="navDireita">
-                <div class="textNav">
-                    <a class="a-link" href="login.html">Agendamento</a>
-                </div>
-                <div class="textNav">
-                    <a class="a-link" href="login.html">Ver Consultas</a>
-                </div>
-                <div class="textNav">
-                    <a class="a-link" href="#rodape1">Instalações</a>
-                </div>
-                <div class="textNav">
-                    <a class="a-link" href="especialidades.html">Especialidades</a>
-                </div>
-                <div class="textNav">
-                    <a>Ajuda</a>
-                </div>
-                
-                <!--Arrumar tamanho----<a class="login-link" href="index.html  ">
-                    <img src="imagens/iconLogout.png" alt="">
-                </a>      -->
-
-            </div>      
-        </div>
+            
+            <!--colocar opções na navbar-->
+            
+            <img src="imagens/iconLogout.png" id="iconLogout">
+        </div>       
     </header> 
+    <!-- --------------------------------------------------------form -->
+    <input type="radio" id="consultas" name="fav_language" class="invisivelRadio" >
+    
+    <input type="radio" id="pacientes" name="fav_language" class="invisivelRadio">
+    
+    <input type="radio" id="inicial" name="fav_language" class="invisivelRadio">
+    
+
+<!------------------------------------------------->
+
+
+
+
+
 
 
 </body>

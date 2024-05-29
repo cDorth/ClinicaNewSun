@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="medico.css">
+    <link rel="stylesheet" href="tela-medico-pacientes.css">
     <title>Tela de login</title>
 </head>
 <body>
@@ -37,33 +37,28 @@
                     <hr id="hrNav">
                 </div>
             </div>
-            <h1 id="navBem">Bem vindo</h1>
+            <h1 id="navBem">Pacientes</h1>
             <img src="imagens/iconLogout.png" id="iconLogout">
         </div>       
     </header> 
     <!-- --------------------------------------------------------form -->
-    <input type="radio" id="consultas" name="fav_language" class="invisivel" >
+    <input type="radio" id="consultas" name="fav_language" class="invisivelRadio" >
     
-    <input type="radio" id="pacientes" name="fav_language" class="invisivel">
+    <input type="radio" id="pacientes" name="fav_language" class="invisivelRadio">
     
-    <input type="radio" id="inicial" name="fav_language" class="invisivel" checked="">
+    <input type="radio" id="inicial" name="fav_language" class="invisivelRadio" checked>
     
 
 <!--------------------------BEM VINDO PERFIL MEDICO TELA INICIAL----------------------->
 
-<div class="fundo-cons">
-
-    <input class="invisivel" type="radio" id="concluidas-rad" name="radio" checked="" />
-    <input class="invisivel" type="radio" id="realizar-rad" name="radio" />
-
-                <label class="radio-cons" for="concluidas-rad">
-                  <span class="concluidas">Concluídas</span>
-                </label>
-                <label class="radio-cons" for="realizar-rad"> 
-                  <span class="realizar">A realizar</span>
-                </label>
-                <div class="fundo"></div>
-
+<div class="fundo-pac">
+    <div class="pac">
+        <div class="perfil"></div>
+        <div class="cara">
+        <div class="nome"><strong>Nome:</strong></div>
+        <div class="info"></div>
+        </div> 
+    </div>
 </div>
 <!-- --------------------------------------------------------------------------------------> 
 

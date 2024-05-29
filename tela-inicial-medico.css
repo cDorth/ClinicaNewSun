@@ -1,72 +1,192 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-   background-image: url(imagens/decoracao_home_med.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   backdrop-filter: blur(12px);
-   background-color:rgba(20, 48, 81);
-   overflow: hidden;
-
+body {
+  background-image: url(imagens/decoracao_home_med.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(12px);
+  background-color: rgba(20, 48, 81);
+  overflow: hidden;
 }
 /* -----------------------------------------------------------------navBar */
 
-
-.navBar{
-    margin-top: 0px;
-    height: 65px;
-    width: 100%;
-    top: 0;
-    background-color: rgba(20, 48, 81);
-    
-
+.navBar {
+  margin-top: 0px;
+  height: 65px;
+  width: 100%;
+  top: 0;
+  background-color: rgba(20, 48, 81);
 }
-#imgNav{
-    width: 170px;
-    height: 170px;
-    top: 4px;
-    position: relative;
+#imgNav {
+  width: 170px;
+  height: 170px;
+  top: 4px;
+  position: relative;
 }
-#hrNav{
-    position: relative;
-    top: -10px;
-    width: 40px;
-    transform: rotate(90deg);
-    border-color: white;
+#hrNav {
+  position: relative;
+  top: -10px;
+  width: 40px;
+  transform: rotate(90deg);
+  border-color: white;
 }
-.navEsquerda{
-    position: absolute;
-    display: flex;
-    align-items:center;
-    width: 20%;
-    top: -45px;
-    margin-left: 3%;
+.navEsquerda {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 20%;
+  top: -45px;
+  margin-left: 3%;
 }
-#iconLogout{
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    width: 30px;
+#iconLogout {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 30px;
 }
-#navBem{font-family: 'hanuman';
-    color: white;
-    position: absolute;
-    left: 48%;
-    top: 10px;
-
+#navBem {
+  font-family: "hanuman";
+  color: white;
+  position: absolute;
+  left: 48%;
+  top: 10px;
 }
-
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
-#caixa{
-
-position: absolute;
-width: 500px;
-height: 500px;
-background-color: white;
-left: 100px;
-top: 500px;
+#caixa {
+  border-radius: 20px;
+  position: relative;
+  width: 1100px;
+  height: 600px;
+  background-color: white;
+  left: 450px;
+  top: 100px;
 }
+
+#foto {
+  width: 400px;
+  height: 390px;
+  border-radius: 50%;
+  position: relative;
+  left: 20px;
+  top: 0px;
+  z-index: 1;
+}
+
+.nome {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: 30px;
+  left: 900px;
+  top: -327px;
+}
+
+.escrever-nome {
+  position: relative;
+  width: 450px;
+  height: 50px;
+  background-color: rgb(204, 204, 204);
+  border-radius: 40px;
+  left: 1000px;
+  top: -390px;
+}
+
+.escrever-idade {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  background-color: rgb(204, 204, 204);
+  border-radius: 40px;
+  left: 1000px;
+  top: -360px;
+}
+
+.idade {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: 30px;
+  left: 904px;
+  top: -400px;
+}
+
+
+
+.cargo {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 30px;
+    left: 904px;
+    top: -310px;
+  }
+
+  
+.escrever-cargo {
+    position: relative;
+    width: 450px;
+    height: 50px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 40px;
+    left: 1000px;
+    top: -310px;
+  }
+
+  
+.escrever-cpf {
+    position: relative;
+    width: 450px;
+    height: 50px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 40px;
+    left: 1000px;
+    top: -310px;
+  }
+
+  
+.cpf {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 30px;
+    left: 918px;
+    top: -310px;
+  }
+
+
+  
+.numero {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 30px;
+    left: 876px;
+    top: -310px;
+  }
+
+  
+.escrever-numero {
+    position: relative;
+    width: 450px;
+    height: 50px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 40px;
+    left: 1000px;
+    top: -310px;
+  }
+
+  

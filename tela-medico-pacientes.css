@@ -1,3 +1,9 @@
+/*HANUMAM*/        @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+/*POPPINS*/        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*ARVO*/        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ /*SANCHEZ*/       @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@0;1&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +15,7 @@ body{
    backdrop-filter: blur(12px);
    background-color:rgba(20, 48, 81);
    overflow: hidden;
+
 }
 /* -----------------------------------------------------------------navBar */
 
@@ -49,10 +56,11 @@ body{
     right: 50px;
     width: 30px;
 }
-#navBem{font-family: 'hanuman';
+#navBem{font-family: sans-serif;
+    font-size: 45px;
     color: white;
     position: absolute;
-    left: 48%;
+    left: 44%;
     top: 10px;
 
 }
@@ -143,6 +151,10 @@ cursor: pointer;
  top: 246px;
  cursor: pointer;
 }
+.invisivelRadio{
+  left: -300%;
+  position: absolute;
+}
 a{
   text-decoration: none;
   color: rgba(20, 48, 81);
@@ -164,51 +176,67 @@ a{
   height: 500px;
 }
 /* tela de consultas do medico------------------------------ */
-.fundo-cons{
-  position: absolute;
-  width: 80%;
-  height: 100vh;
-  left: 10%;
-  margin-top: 10px;
-  background-color: white;
-  border-radius: 2%;
-  overflow: visible;
+
+.fundo-pac{
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    left: 10%;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fundo-pac .pac{
+    position: absolute;
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: sans-serif;
+    width: 90%;
+    height: 12vh;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgba(20, 48, 81);
+    box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+    display: flex;
 }
 
- .invisivel {
-  display: none;
-}
-.radio-cons{
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  top: 0;
-  background-color: blue;
-  color: white;
-  font-size: 20px;
-}
-.concluidas{
-  position: absolute;
-  left: 50px;
-  top: 15px;
-  z-index: 2;
-}
-.realizar{
-  position: absolute;
-  left: 200px;
-  top: 15px;
-}
-#concluidas-rad:checked ~ .radio-cons .concluidas{
-  background-color: black;
-  color: white;
-  padding: 20px 30px;
-  margin-top: 0;
-}
-#realizar-rad:checked ~ .fundo{
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  margin: auto;
-  background-color: black;
+  .pac .perfil{
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    clip-path: circle();
+    margin-left: 24px;
+    align-self: center;
+  }
+.pac .cara{
+      display: flex;
+      justify-content: space-evenly;
+      row-gap: 300px;
 }
 
+.pac .nome{
+    width: 120px;
+    height: 50px;
+    left:30px;
+    font-size: small;
+    background-color: black;
+    margin-left: 24px;
+    align-self: center;
+    color: white;
+  }
+
+  .pac .info{
+    width: 120px;
+    height: 50px;
+    left:30px;
+    font-size: small;
+    background-color: black;
+    margin-left: 24px;
+    align-self: center;
+    color: white;
+  }

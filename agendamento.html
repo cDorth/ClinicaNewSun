@@ -3,57 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agendamento</title>
     <link rel="stylesheet" href="agendamento.css">
 </head>
 <body>
+ 
+<!---------------------------NAVBAR----------------->
+
+<header>
+    <div class="navBar">
+        <div class="navEsquerda"> 
+            <div class="container">
+
+                <input type="checkbox" class="menu-click">
+            <label class="checkbox-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+         
+            <ul>
+                <label for="inicial" ><div class="btnckI"></div></label>
+                <label for="consultas" ><div class="btnckC"></div></label>
+                <label for="pacientes"><div class="btnckP"></div></label>
+                <a href="" class="contNav">Inicial</a>
+                <a href="" class="contNav">Consultas</a>
+                <a href="" class="contNav">Pacientes</a>
+            </ul>
+    
+        </div>
+        <div >
+            <img src="imagens/newSun.png" id="imgNav">
+            </div>
+            <div>
+                <hr id="hrNav">
+            </div>
+        </div>
+        <h1 id="navBem">O que você deseja marcar hoje?</h1>
+        <img src="imagens/iconLogout.png" id="iconLogout">
+    </div>       
+</header> 
+
+<!--BOTÕES ESPECIALIDADES-->
+
+<div class="agendamento">
     
     <div class="botoes">
-
-        <div class="especialidades">
-
         
-                <a id="retina" class="a" href="#conteudo1">Retina</a>
-            
-
-
-            <a id="catarata" class="a" href="#conteudo2">Catarata</a>
-
-
-            <a id="glaucoma" class="a" href="#conteudo3">Glaucoma</a>
-
-
-            <a id="oftalmopediatria" class="a" href="#conteudo4">Oftalmopediatria</a>
-
-            
-            <a id="refrativa" class="a" href="#conteudo5">Refrativa</a>
-
-
-            <a id="cornea" class="a" href="#conteudo6">Córnea</a>
-            
-            
-            <a id="miopia" class="a" href="#conteudo7">Miopia</a>
-    
-
-            <a id="hipermetropia" class="a" href="#conteudo8">Hipermetropia</a>
-            
-
-
-
-        </div>
-
+        <form action="http://google.com">
+            <input type="submit" value="Geral" />
+        
+        <button id="consultas">Retina</button>
+        <button id="consultas">Córnea</button>
+        <button id="consultas">Refrativa</button>
+        <button id="consultas">Oftalmopediatria</button>
+        <button id="consultas">Glaucoma</button>
+        <button id="consultas">Catarata</button>
+        <button id="consultas">Miopia</button>
+        <button id="consultas">Hipermetropia</button>
+</form>
 
     </div>
 
 
+</div>
 
 
 
-
-
-
-
-
+</div>
 
 
 

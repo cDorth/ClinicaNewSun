@@ -1,70 +1,217 @@
-.a{
-    text-decoration: none;
-    }
-    #retina, #catarata,#glaucoma,#oftalmopediatria,#refrativa,#cornea,#miopia,#hipermetropia{
-      position: relative;
-      background-color: rgb(20, 48, 81);
-      color: rgb(255, 255, 255);
-      border: 3px;
-      border-color: transparent;
-      border-radius: 20px;
-    }
-    
-    #retina:hover,#catarata:hover,#glaucoma:hover,#oftalmopediatria:hover,#refrativa:hover,#cornea:hover,#miopia:hover,#hipermetropia:hover{
-      transform: scale(1.1);
-      background-color: transparent;
-      border-style: solid;
-      border-width: 1px;
-      border-color: rgba(20, 48, 81);
-      color: rgba(20, 48, 81);
-      border-color: rgb(20, 48, 81);
-      cursor: pointer;
-      transition: 0.2s;
-    }
-    #retina{
-      padding-block: 17px;
-      padding-inline: 130px;
-    }
-    #catarata{
-      padding-block: 17px;
-      padding-inline: 124.24px;
-    }
-    #glaucoma{
-      padding-block: 17px;
-      padding-inline: 118.0159px;
-    }
-    
-    #oftalmopediatria{
-    
-      padding-block: 17px;
-      padding-inline: 96.24px;
-    
-    }
-    
-    #refrativa{
-    
-      padding-block: 17px;
-      padding-inline: 121.13px;
-    
-    }
-    
-    #cornea{
-    
-      padding-block: 17px;
-      padding-inline: 127.79px;
-    
-    }
-    
-    #miopia{
-      padding-block: 17px;
-      padding-inline: 127.79px;
-    
-    }
-    
-    #hipermetropia{
-      padding-block: 17px;
-      padding-inline: 104.24px;
-    
-    }
-    
-    
+/*HANUMAM*/        @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+/*POPPINS*/        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*ARVO*/        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ /*SANCHEZ*/       @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@0;1&display=swap');
+
+/*FONTES      ^
+              |
+
+        */
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url(imagens/fundo-agendamento.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(12px);
+  background-color:rgba(20, 48, 81);
+  overflow: hidden;
+ 
+ }
+/* -----------------------------------------------------------------navBar */
+
+
+.navBar{
+  margin-top: 0px;
+  height: 65px;
+  width: 100%;
+  top: 0;
+  background-color: rgba(20, 48, 81);
+  
+
+}
+#imgNav{
+  width: 170px;
+  height: 170px;
+  top: 4px;
+  position: relative;
+}
+#hrNav{
+  position: relative;
+  top: -10px;
+  width: 40px;
+  transform: rotate(90deg);
+  border-color: white;
+}
+.navEsquerda{
+  position: absolute;
+  display: flex;
+  align-items:center;
+  width: 20%;
+  top: -45px;
+  margin-left: 3%;
+}
+#iconLogout{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 30px;
+}
+#navBem{font-family: 'hanuman';
+  color: white;
+  position: absolute;
+  left: 35%;
+  top: 10px;
+
+}
+.container{
+position: absolute;
+top:63px;
+left: -30px;
+}
+.menu-click{
+position: absolute;
+z-index: 1000;
+width: 35px;
+height: 35px;
+opacity: 0;
+cursor: pointer;
+}
+
+.container .checkbox-menu{
+position: absolute;
+z-index: 999;
+width: 35px;
+height: 35px;
+}
+.container .checkbox-menu span{
+display: block;
+width: 35px;
+height: 5px;
+margin-bottom: 10px;
+background-color: white;
+border-radius: 10px;
+transition: all ease .2s;
+}
+.container .menu-click:checked ~ .checkbox-menu span:nth-child(1){
+transform-origin: 0% 0%;
+transform: rotate(45deg) scaleX(1.25);
+}
+.container .menu-click:checked ~ .checkbox-menu span:nth-child(2){
+opacity: 0;
+}
+.container .menu-click:checked ~ .checkbox-menu span:nth-child(3){
+transform-origin: 0% 100%;
+transform: rotate(-45deg) scaleX(1.25);
+}
+.container ul{
+position: absolute;
+z-index: 998;
+left: 0;
+top:0 ;
+width: 300px;
+background-color: rgba(20, 48, 81);
+height: calc(100vh - 160px);
+padding-top: 100px;
+padding-left: 40px;
+margin-left: -370px;
+transition: all ease .2s;
+margin-top: 47px;
+display: flex;
+flex-direction: column;
+color: rgba(20, 48, 81);
+}
+.btnckI{
+position: absolute;
+z-index: 1000;
+width: 340px;
+height: 43px;
+background-color: rgba(0, 0, 255, 0);
+left: 0;
+top: 100px;
+cursor: pointer;
+}
+.btnckC{
+background-color: rgba(255, 0, 0, 0);
+position: absolute;
+z-index: 1000;
+width: 340px;
+height: 43px;
+left: 0;
+top: 173px;
+cursor: pointer;
+}
+.btnckP{
+background-color: rgba(0, 255, 255, 0);
+position: absolute;
+z-index: 1000;
+width: 340px;
+height: 43px;
+left: 0;
+top: 246px;
+cursor: pointer;
+}
+.invisivelRadio{
+left: -300%;
+position: absolute;
+}
+a{
+text-decoration: none;
+color: rgba(20, 48, 81);
+background-color: #E3EEF6;
+width: 100%;
+padding-left:20px;
+margin-left:-20px;
+margin-bottom: 30px;
+padding-block: 10px;
+font-size: 20px;
+}
+
+.container .menu-click:checked ~ ul{
+  margin-left: -50px;
+}
+.container #pacientes:checked ~ .contNav{
+background-color: rgb(185, 255, 176);
+width: 500px;
+height: 500px;
+}
+/* tela de consultas do medico------------------------------ */
+.fundo-cons{
+position: absolute;
+width: 80%;
+height: 100vh;
+left: 10%;
+margin-top: 10px;
+background-color: white;
+border-radius: 2%;
+}
+
+/* ---------------------- BOTÕES DAS CONSULTAS----------- */
+
+
+.botoes{
+  height: 65vh;
+  width: 55vw;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: start;
+  flex-wrap: wrap;
+  margin:10vh auto;
+
+}
+#consultas{
+  height: 6vh;
+  width: 13vw;
+  margin: 10px;
+  background-color: rgba(20, 48, 81);
+  color: white;
+  border-radius: 15px;
+  font-size: 2.8vh;
+  font-family: 'arvo';
+}

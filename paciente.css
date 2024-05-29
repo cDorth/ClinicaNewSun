@@ -1,184 +1,200 @@
-/*HANUMAM*/        @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
-/*POPPINS*/        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/*ARVO*/        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- /*SANCHEZ*/       @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@0;1&display=swap');
-
-/* --------------------------FUNDO DO BODY---------------------- */
-
 *{
-    margin: 0;
-    padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 body{
-   background-image: url(imagens/decoracao_home_med.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   backdrop-filter: blur(12px);
-   background-color:rgba(20, 48, 81);
-   overflow: hidden;
+ background-image: url(imagens/decoracao_home_med.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ backdrop-filter: blur(12px);
+ background-color:rgba(20, 48, 81);
+ overflow: hidden;
 
 }
-
 /* -----------------------------------------------------------------navBar */
- .hanuman-thin {
-    font-family: "Hanuman", serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .hanuman-light {
-    font-family: "Hanuman", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .hanuman-regular {
-    font-family: "Hanuman", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .hanuman-bold {
-    font-family: "Hanuman", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .hanuman-black {
-    font-family: "Hanuman", serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
 
 
 
-head{
-    overflow: hidden;
-}
-
-
-div{
-    position: relative;
 
 
 
-}
-
-
-.a-link{
-
-color: white;
-text-decoration: none;
-
-}
-
-.login-link{
-    color: rgba( 20,48,81);
-    text-decoration: none;}
-    .login-link:hover{
-        color: rgba(191, 143, 91, 1);
-        text-decoration: none;}
-/* ---------------------------------------navBar */
+/*------------------------PARTE DO MEIO-----------*/
 .navBar{
-    margin-top: 0px;
-    height: 65px;
-    width: 100%;
-    top: 0;
-    background-color: rgba(20, 48, 81);
-}
-.navEsquerda{
-    position: absolute;
-    display: flex;
-    align-items:center;
-    width: 20%;
-    top: -45px;
-    margin-left: 3%;
-}
-.navDireita{
-    top: 15px;
-    right: 18%;
-    position: absolute;
-    display: flex;
-    align-items:center;
-    justify-content:space-evenly;
-    width: 60%;
-}
-.textNav{
-    top: 5px;
-font-size: 20px;
-color: white;
-position: relative;
-font-family: 'arvo';
-}
+  margin-top: 0px;
+  height: 65px;
+  width: 100%;
+  top: 0;
+  background-color: rgba(20, 48, 81);
+  
 
+}
 #imgNav{
-    width: 170px;
-    height: 170px;
-    top: 4px;
-    position: relative;
+  width: 170px;
+  height: 170px;
+  top: 4px;
+  position: relative;
 }
 #hrNav{
-    position: relative;
-   top: -10px;
-    width: 40px;
-    transform: rotate(90deg);
-    border-color: white;
+  position: relative;
+  top: -10px;
+  width: 40px;
+  transform: rotate(90deg);
+  border-color: white;
 }
-
+.navEsquerda{
+  position: absolute;
+  display: flex;
+  align-items:center;
+  width: 20%;
+  top: -45px;
+  margin-left: 3%;
+}
 #iconLogout{
-    right: -240px;
-    top: 0.1px;
-    width: 1vh;
-    height: 0.5px;
-    display: flex;
-    align-items:center;
-    justify-content:center;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 30px;
 }
-/* ------------------------------------barra de rolagem */
+#navBem{font-family: 'hanuman';
+  color: white;
+  position: absolute;
+  left: 48%;
+  top: 10px;
+
+}
+.container{
+position: absolute;
+top:63px;
+left: -30px;
+}
+.menu-click{
+position: absolute;
+z-index: 1000;
+width: 35px;
+height: 35px;
+opacity: 0;
+cursor: pointer;
+}
+
+.container .checkbox-menu{
+position: absolute;
+z-index: 999;
+width: 35px;
+height: 35px;
+}
+.container .checkbox-menu span{
+display: block;
+width: 35px;
+height: 5px;
+margin-bottom: 10px;
+background-color: white;
+border-radius: 10px;
+transition: all ease .2s;
+}
+.container .menu-click:checked ~ .checkbox-menu span:nth-child(1){
+transform-origin: 0% 0%;
+transform: rotate(45deg) scaleX(1.25);
+}
+.container .menu-click:checked ~ .checkbox-menu span:nth-child(2){
+opacity: 0;
+}
+.container .menu-click:checked ~ .checkbox-menu span:nth-child(3){
+transform-origin: 0% 100%;
+transform: rotate(-45deg) scaleX(1.25);
+}
+.container ul{
+position: absolute;
+z-index: 998;
+left: 0;
+top:0 ;
+width: 300px;
+background-color: rgba(20, 48, 81);
+height: calc(100vh - 160px);
+padding-top: 100px;
+padding-left: 40px;
+margin-left: -370px;
+transition: all ease .2s;
+margin-top: 47px;
+display: flex;
+flex-direction: column;
+color: rgba(20, 48, 81);
+}
+.btnckI{
+position: absolute;
+z-index: 1000;
+width: 340px;
+height: 43px;
+background-color: rgba(0, 0, 255, 0);
+left: 0;
+top: 100px;
+cursor: pointer;
+}
+.btnckC{
+background-color: rgba(255, 0, 0, 0);
+position: absolute;
+z-index: 1000;
+width: 340px;
+height: 43px;
+left: 0;
+top: 173px;
+cursor: pointer;
+}
+.btnckP{
+background-color: rgba(0, 255, 255, 0);
+position: absolute;
+z-index: 1000;
+width: 340px;
+height: 43px;
+left: 0;
+top: 246px;
+cursor: pointer;
+}
+.invisivelRadio{
+left: -300%;
+position: absolute;
+}
+a{
+text-decoration: none;
+color: rgba(20, 48, 81);
+background-color: #E3EEF6;
+width: 100%;
+padding-left:20px;
+margin-left:-20px;
+margin-bottom: 30px;
+padding-block: 10px;
+font-size: 20px;
+}
 
 
-body::-webkit-scrollbar {
-    width: 10px;               
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: rgba( 20,48,81);       
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);   
-    border-radius: 20px;       
-    border: 3px solid rgba( 20,48,81);  
-  }
+.container .menu-click:checked ~ ul{
+  margin-left: -50px;
+}
+.background .oi p{
+opacity: 0;
+}
 
-/* -------Fazendo o Botão de login------- */
-#login{
-    position: absolute;
-    right: -240px;
-    top: 0.1px;
-    width: 14vh;
-    height: 40px;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    background-color:rgba(191, 143, 91, 1) ;
-    color: rgb(20, 48, 81);
-    font-size: 20px;
-    border: 3px;
-    border-color: transparent;
-    border-radius:20px;
-    border-style: solid;
-    font-family: 'arvo';
-    font-weight: bold; 
-    }
 
-#login:hover{
-    transform: scale(1.1);
-    background-color: transparent;
-    color: rgba(191, 143, 91, 1);
-    border-color:rgba(191, 143, 91, 1);
-    cursor: pointer;
-    transition: 0.5s;}  
+.background .oi .TCHAU{
+width: 20px;
+height: 20px;
+background-color: red;
+position: absolute;
+}
+#consultas:checked ~ .background .oi .TCHAU {
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgb(255, 255, 255);
+opacity: 100%;
+}
+#pacientes:checked ~ .perfil > .ola-dr {
+background-color: rgb(47, 255, 0);
+color: white;
+font-size: 50px;
+}
+.container #pacientes:checked ~ .contNav{
+background-color: rgb(185, 255, 176);
+width: 500px;
+height: 500px;
+}
 /* BOAS VINDAS - PERFIL DO MEDICO */
-
