@@ -72,7 +72,7 @@ body {
   border-radius: 50%;
   position: relative;
   left: 20px;
-  top: 0px;
+  top: 90px;
   z-index: 1;
 }
 
@@ -84,7 +84,7 @@ body {
   color: black;
   font-size: 30px;
   left: 900px;
-  top: -327px;
+  top: -397px;
 }
 
 .escrever-nome {
@@ -94,7 +94,7 @@ body {
   background-color: rgb(204, 204, 204);
   border-radius: 40px;
   left: 1000px;
-  top: -390px;
+  top: -465px;
 }
 
 .escrever-idade {
@@ -104,7 +104,7 @@ body {
   background-color: rgb(204, 204, 204);
   border-radius: 40px;
   left: 1000px;
-  top: -360px;
+  top: -440px;
 }
 
 .idade {
@@ -115,7 +115,7 @@ body {
   color: black;
   font-size: 30px;
   left: 904px;
-  top: -400px;
+  top: -483px;
 }
 
 
@@ -128,7 +128,7 @@ body {
     color: black;
     font-size: 30px;
     left: 904px;
-    top: -310px;
+    top: -405px;
   }
 
   
@@ -139,7 +139,7 @@ body {
     background-color: rgb(204, 204, 204);
     border-radius: 40px;
     left: 1000px;
-    top: -310px;
+    top: -410px;
   }
 
   
@@ -150,7 +150,7 @@ body {
     background-color: rgb(204, 204, 204);
     border-radius: 40px;
     left: 1000px;
-    top: -310px;
+    top: -380px;
   }
 
   
@@ -162,7 +162,7 @@ body {
     color: black;
     font-size: 30px;
     left: 918px;
-    top: -310px;
+    top: -376px;
   }
 
 
@@ -175,7 +175,7 @@ body {
     color: black;
     font-size: 30px;
     left: 876px;
-    top: -310px;
+    top: -350px;
   }
 
   
@@ -186,7 +186,7 @@ body {
     background-color: rgb(204, 204, 204);
     border-radius: 40px;
     left: 1000px;
-    top: -310px;
+    top: -355px;
   }
 
   
