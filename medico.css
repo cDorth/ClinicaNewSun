@@ -1,4 +1,12 @@
+/*HANUMAM*/        @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+/*POPPINS*/        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*ARVO*/        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ /*SANCHEZ*/       @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@0;1&display=swap');
+
+/*-------------FONTES----------------*/
+
 *{
+    font-family: 'arvo';
     margin: 0;
     padding: 0;
 }
@@ -145,14 +153,19 @@ cursor: pointer;
 }
 a{
   text-decoration: none;
-  color: rgba(20, 48, 81);
-  background-color: #E3EEF6;
+  color: rgb(255, 255, 255);
   width: 100%;
   padding-left:20px;
-  margin-left:-20px;
+  margin-left:25px;
   margin-bottom: 30px;
   padding-block: 10px;
   font-size: 20px;
+}
+a:hover ~ a::before {
+  content: "";
+  width: 10px;
+  height: 30px;
+  background-color: #ffffff;
 }
 
   .container .menu-click:checked ~ ul{
@@ -165,19 +178,12 @@ a{
 }
 /* tela de consultas do medico------------------------------ */
 
-#consultas:checked ~ .fundo-cons{
-  opacity: 100%;
-}
-#consultas:checked ~ .fundo-cons .radio-cons,
-#consultas:checked ~ .fundo-cons .radio-cons .concluidas,
-#consultas:checked ~ .fundo-cons .radio-cons , .realizar{
-  opacity: 100%;
-}
-#consultas:checked ~ .fundo-cons{
+
+ .fundo-cons{
   position: absolute;
   width: 80%;
   height: 100vh;
-  left: 10%;
+  left: -1110%;
   margin-top: 10px;
   background-color: white;
   border-radius: 2%;
@@ -187,7 +193,7 @@ a{
  .invisivel {
   display: none;
 }
-#consultas:checked ~ .radio-cons{
+.radio-cons{
   position: absolute;
   width: 100%;
   height: 50px;
@@ -198,7 +204,10 @@ a{
   border-radius: 10px 10px 0 0;
   opacity: 100%;
 }
-#consultas:checked ~ .concluidas{
+#consultas:checked ~ .fundo-cons{
+  left: 10%;
+}
+ .concluidas{
   position: absolute;
   left: 50px;
   top: 15px;
@@ -206,7 +215,7 @@ a{
   cursor: pointer;
   opacity: 100%;
 }
-#consultas:checked ~ .realizar{
+ .realizar{
   position: absolute;
   left: 200px;
   top: 15px;
@@ -216,9 +225,9 @@ a{
 #concluidas-rad:checked ~ .radio-cons .concluidas{
   background-color: rgb(255, 255, 255);
   color: rgba(20, 48, 81);
-  padding: 11.5px;
+  padding: 12px;
   position: absolute;
-  top:3.5px;
+  top:1.5px;
   left: 38.5px;
   border-radius: 10px 10px 0 0 ;
 }
@@ -244,9 +253,9 @@ a{
 #realizar-rad:checked ~ .radio-cons .realizar{
   background-color: rgb(255, 255, 255);
   color: rgba(20, 48, 81);
-  padding: 11.5px;
+  padding: 12px;
   position: absolute;
-  top:3.5px;
+  top:1.5px;
   left: 188.5px;
   border-radius: 10px 10px 0 0 ;
 }
@@ -269,5 +278,99 @@ a{
   border-bottom-left-radius: 300px;
   box-shadow: -3px 3px 0px 3px #ffffff;
   }
+
+ .pac{
+    position: absolute;
+    margin-top: 100px;
+    font-size: large;
+    font-family: sans-serif;
+    width: 90%;
+    height: 12vh;
+    left: -200%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 6px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgba(20, 48, 81);
+    box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+    display: flex;
+    -webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+    box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  }
+#concluidas-rad:checked ~ .pac{
+  left: 70px;
+}
+  .pac .perfil{
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    clip-path: circle();
+    margin-left: 24px;
+    align-self: center;
+  }
+.pac .cara{
+      display: flex;
+      justify-content: space-evenly;
+      justify-self: center;
+      align-items: center;
+      background-color: transparent;
+      width: 60%;
+}
+
+.pac .nome{
+  margin-top: 3px;
+  width: 190px;
+  height: 50px;
+  left:30px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 24px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+
+.pac .info{
+  margin-top: 3px;
+  width: 190px;
+  height: 50px;
+  left:30px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 24px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+.pac .ult-med{
+  margin-top: 3px;
+  width: 230px;
+  height: 50px;
+  left:30px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 24px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+.pac .med{
+  margin-top: 3px;
+  width: 230px;
+  height: 50px;
+  left:30px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 24px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+
+.pac img{
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  justify-self: right;
+  padding-left: 300px;
+}
+
 
 
