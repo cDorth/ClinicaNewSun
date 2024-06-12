@@ -107,7 +107,6 @@ a{
         font-size: 30px;
         padding-left: 50px;
         border-radius: 15px;
-        color: #143051;
         margin-left: 10%;
     }
     #senha,#confSenha,#email{
@@ -118,7 +117,7 @@ a{
     }
 
    input::placeholder{
-    color: #143151b7;
+    color: #14335184;
    }
     .btns{
         position: absolute;
@@ -146,7 +145,11 @@ a{
         background-color: #143051;
         border-color: #E3EEF6;
         color: #E3EEF6;
-        border-width:2px;
+        border-width:1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
     }
     #entrar{
         border-style: solid;
@@ -154,6 +157,7 @@ a{
         color:  #143051;
         border-color: #143051;
         border-width:2px;
+        cursor: pointer;
 
     }
         #iconEmail{

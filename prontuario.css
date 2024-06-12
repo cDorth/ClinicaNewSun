@@ -9,7 +9,7 @@ body{
     background-image: url(imagens/fundo-agendamento2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(3px);
     background-color: rgba(20, 48, 81);
 }
 *{
@@ -17,15 +17,13 @@ body{
     margin: 0;
     padding: 0;
 }
-li, ul{
-    left: 40px;
-}    
+  
 .folha{
     display: flex;
     justify-content: center;
 }
 .prontuario{
-    height: 100vh;
+    height: 100%;
     width: 40vw;
     background-color: white;
     padding: 10px 20px;
@@ -39,12 +37,32 @@ li, ul{
     justify-content: space-between;
     font-size: 20px;
 }
-.meio-pron{
+.title{
+    font-size: 30px;
     padding-top: 50px;
 }
 .meio-pron ul{
     padding-left: 40px;
 }
-.title{
-    font-size: 30px;
+.listas{
+    padding-top: 10px;
+}
+.assinatura{
+    height: 1px;
+    width: 350px;
+    background-color: black;
+    opacity: 40%;
+    bottom: 250px;
+}
+.baixo-pron{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 5px 0;
+    flex-direction: column;
+}
+.ass{
+    font-size: 15px;
+    color: black;
+    opacity: 40%;
 }

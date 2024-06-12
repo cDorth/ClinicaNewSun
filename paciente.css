@@ -198,3 +198,477 @@ width: 500px;
 height: 500px;
 }
 /* BOAS VINDAS - PERFIL DO MEDICO */
+
+
+
+
+
+.pac{
+  position: absolute;
+  margin-top: 100px;
+  font-size: large;
+  font-family: sans-serif;
+  width: 90%;
+  height: 12vh;
+  left: -200%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(20, 48, 81);
+  box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+  display: flex;
+  -webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+#concluidas-rad:checked ~ .pac{
+left: 70px;
+}
+.pac .perfil{
+  width: 255px;
+  height: 255px;
+  background-color: black;
+  clip-path: circle();
+  margin-left: 24px;
+  align-self: center;
+}
+.pac .cara{
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-items: center;
+    background-color: transparent;
+    width: 60%;
+}
+
+.pac .nome{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pac .info{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pac .ult-med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pac .med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pac img{
+width: 70px;
+height: 70px;
+align-self: center;
+justify-self: right;
+padding-left: 160px;
+}
+
+/* perfil2 */
+.pacc2{
+position: absolute;
+margin-top: 230px;
+font-size: large;
+font-family: sans-serif;
+width: 90%;
+height: 12vh;
+left: -200%;
+background-color: rgba(255, 255, 255, 0);
+border-radius: 6px;
+border: 2px;
+border-style: solid;
+border-color: rgba(20, 48, 81);
+box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+display: flex;
+-webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+#concluidas-rad:checked ~ .pacc2{
+left: 70px;
+}
+.pacc2 .perfil{
+width: 255px;
+height: 255px;
+background-color: black;
+clip-path: circle();
+margin-left: 24px;
+align-self: center;
+}
+.pacc2 .cara{
+  display: flex;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: transparent;
+  width: 60%;
+}
+
+.pacc2 .nome{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacc2 .info{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacc2 .ult-med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacc2 .med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacc2 img{
+width: 70px;
+height: 70px;
+align-self: center;
+justify-self: right;
+padding-left: 160px;
+}
+/* perfil3 */
+.pacc3{
+position: absolute;
+margin-top: 360px;
+font-size: large;
+font-family: sans-serif;
+width: 90%;
+height: 12vh;
+left: -200%;
+background-color: rgba(255, 255, 255, 0);
+border-radius: 6px;
+border: 2px;
+border-style: solid;
+border-color: rgba(20, 48, 81);
+box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+display: flex;
+-webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+#concluidas-rad:checked ~ .pacc3{
+left: 70px;
+}
+.pacc3 .perfil{
+width: 255px;
+height: 255px;
+background-color: black;
+clip-path: circle();
+margin-left: 24px;
+align-self: center;
+}
+.pacc3 .cara{
+  display: flex;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: transparent;
+  width: 60%;
+}
+
+.pacc3 .nome{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacc3 .info{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacc3 .ult-med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacc3 .med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacc3 img{
+width: 70px;
+height: 70px;
+align-self: center;
+justify-self: right;
+padding-left: 160px;
+}
+
+/* ------------------------------- FIM dos Pacientes com consultas concluidas--------------------- */
+
+/* ------------------------------- FIM dos Pacientes com consultas a realizar--------------------- */
+.pacR1{
+position: absolute;
+margin-top: 100px;
+font-size: large;
+font-family: sans-serif;
+width: 90%;
+height: 12vh;
+left: -200%;
+background-color: rgba(255, 255, 255, 0);
+border-radius: 6px;
+border: 2px;
+border-style: solid;
+border-color: rgba(20, 48, 81);
+box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+display: flex;
+-webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+#realizar-rad:checked ~ .pacR1{
+left: 70px;
+}
+.pacR1 .perfil{
+width: 255px;
+height: 255px;
+background-color: black;
+clip-path: circle();
+margin-left: 24px;
+align-self: center;
+}
+.pacR1 .cara{
+  display: flex;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: transparent;
+  width: 60%;
+}
+
+.pacR1 .nome{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacR1 .info{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacR1 .ult-med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacR1 .med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacR1 img{
+width: 70px;
+height: 70px;
+align-self: center;
+justify-self: right;
+padding-left: 160px;
+}
+
+/* perfil2 */
+.pacR2{
+position: absolute;
+margin-top: 230px;
+font-size: large;
+font-family: sans-serif;
+width: 90%;
+height: 12vh;
+left: -200%;
+background-color: rgba(255, 255, 255, 0);
+border-radius: 6px;
+border: 2px;
+border-style: solid;
+border-color: rgba(20, 48, 81);
+box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+display: flex;
+-webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+#realizar-rad:checked ~ .pacR2{
+left: 70px;
+}
+.pacR2 .perfil{
+width: 255px;
+height: 255px;
+background-color: black;
+clip-path: circle();
+margin-left: 24px;
+align-self: center;
+}
+.pacR2 .cara{
+display: flex;
+justify-content: space-evenly;
+justify-self: center;
+align-items: center;
+background-color: transparent;
+width: 60%;
+}
+
+.pacR2 .nome{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacR2 .info{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacR2 .ult-med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacR2 .med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacR2 img{
+width: 70px;
+height: 70px;
+align-self: center;
+justify-self: right;
+padding-left: 160px;
+}

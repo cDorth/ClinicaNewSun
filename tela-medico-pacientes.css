@@ -204,6 +204,7 @@ a{
     display: flex;
 }
 
+
   .pac .perfil{
     width: 75px;
     height: 75px;
@@ -217,8 +218,7 @@ a{
       justify-content: space-evenly;
       justify-self: center;
       background-color: transparent;
-      row-gap: 300px;
-      width: 60%;
+      width: 65%;
 }
 
 .pac .nome{
@@ -227,12 +227,12 @@ a{
     left:30px;
     font-size: large;
     background-color: transparent;
-    margin-left: 24px;
+    margin-left: 34px;
     align-self: center;
     color: rgba(20, 48, 81);
   }
 
-  .pac .info{
+  .pac .sexo{
     width: 190px;
     height: 50px;
     left:30px;
@@ -242,8 +242,8 @@ a{
     align-self: center;
     color: rgba(20, 48, 81);
   }
-  .pac .ult-med{
-    width: 190px;
+  .pac .ult-con{
+    width: 210px;
     height: 50px;
     left:30px;
     font-size: large;
@@ -253,4 +253,355 @@ a{
     color: rgba(20, 48, 81);
   }
 
+  .pac .con{
+    width: 190px;
+    height: 50px;
+    left:40px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 24px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+
+  .pac img{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    justify-self: right;
+    padding-left: 160px;
+  }
+
+  /* perfil 2 */
+
+  .fundo-pac .pac2{
+    position: absolute;
+    margin-top: 160px;
+    font-family: sans-serif;
+    width: 90%;
+    height: 12vh;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgba(20, 48, 81);
+    box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+    display: flex;
+  }
   
+    .pac2 .perfil{
+      width: 75px;
+      height: 75px;
+      background-color: black;
+      clip-path: circle();
+      margin-left: 24px;
+      align-self: center;
+    }
+  .pac2 .cara{
+        display: flex;
+        justify-content: space-evenly;
+        justify-self: center;
+        background-color: transparent;
+        width: 65%;
+  }
+  
+  .pac2 .nome{
+      width: 190px;
+      height: 50px;
+      left:30px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 34px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+  
+    .pac2 .sexo{
+      width: 190px;
+      height: 50px;
+      left:30px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 24px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+    .pac2 .ult-con{
+      width: 210px;
+      height: 50px;
+      left:30px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 24px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+
+    .pac2 .con{
+      width: 190px;
+      height: 50px;
+      left:40px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 24px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+  
+    .pac2 img{
+      width: 70px;
+      height: 70px;
+      align-self: center;
+      justify-self: right;
+      padding-left: 160px;
+    }
+
+    /* perfil 3 */
+    .fundo-pac .pac3{
+      position: absolute;
+      margin-top: 290px;
+      font-family: sans-serif;
+      width: 90%;
+      height: 12vh;
+      background-color: white;
+      border-radius: 6px;
+      border: 2px;
+      border-style: solid;
+      border-color: rgba(20, 48, 81);
+      box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+      display: flex;
+    }
+    
+      .pac3 .perfil{
+        width: 75px;
+        height: 75px;
+        background-color: black;
+        clip-path: circle();
+        margin-left: 24px;
+        align-self: center;
+      }
+    .pac3 .cara{
+          display: flex;
+          justify-content: space-evenly;
+          justify-self: center;
+          background-color: transparent;
+          width: 65%;
+    }
+    
+    .pac3 .nome{
+        width: 190px;
+        height: 50px;
+        left:30px;
+        font-size: large;
+        background-color: transparent;
+        margin-left: 34px;
+        align-self: center;
+        color: rgba(20, 48, 81);
+      }
+    
+      .pac3 .sexo{
+        width: 190px;
+        height: 50px;
+        left:30px;
+        font-size: large;
+        background-color: transparent;
+        margin-left: 24px;
+        align-self: center;
+        color: rgba(20, 48, 81);
+      }
+      .pac3 .ult-con{
+        width: 210px;
+        height: 50px;
+        left:30px;
+        font-size: large;
+        background-color: transparent;
+        margin-left: 24px;
+        align-self: center;
+        color: rgba(20, 48, 81);
+      }
+  
+      .pac3 .con{
+        width: 190px;
+        height: 50px;
+        left:40px;
+        font-size: large;
+        background-color: transparent;
+        margin-left: 24px;
+        align-self: center;
+        color: rgba(20, 48, 81);
+      }
+    
+      .pac3 img{
+        width: 70px;
+        height: 70px;
+        align-self: center;
+        justify-self: right;
+        padding-left: 160px;
+      }
+/* perfil4 */
+
+.fundo-pac .pac4{
+  position: absolute;
+  margin-top: 420px;
+  font-family: sans-serif;
+  width: 90%;
+  height: 12vh;
+  background-color: white;
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(20, 48, 81);
+  box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+  display: flex;
+}
+
+  .pac4 .perfil{
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    clip-path: circle();
+    margin-left: 24px;
+    align-self: center;
+  }
+.pac4 .cara{
+      display: flex;
+      justify-content: space-evenly;
+      justify-self: center;
+      background-color: transparent;
+      width: 65%;
+}
+
+.pac4 .nome{
+    width: 190px;
+    height: 50px;
+    left:30px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 34px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+
+  .pac4 .sexo{
+    width: 190px;
+    height: 50px;
+    left:30px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 24px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+  .pac4 .ult-con{
+    width: 210px;
+    height: 50px;
+    left:30px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 24px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+
+  .pac4 .con{
+    width: 190px;
+    height: 50px;
+    left:40px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 24px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+
+  .pac4 img{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    justify-self: right;
+    padding-left: 160px;
+  }
+
+  /* perfil5 */
+
+  .fundo-pac .pac5{
+    position: absolute;
+    margin-top: 550px;
+    font-family: sans-serif;
+    width: 90%;
+    height: 12vh;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgba(20, 48, 81);
+    box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+    display: flex;
+  }
+  
+    .pac5 .perfil{
+      width: 75px;
+      height: 75px;
+      background-color: black;
+      clip-path: circle();
+      margin-left: 24px;
+      align-self: center;
+    }
+  .pac5 .cara{
+        display: flex;
+        justify-content: space-evenly;
+        justify-self: center;
+        background-color: transparent;
+        width: 65%;
+  }
+  
+  .pac5 .nome{
+      width: 190px;
+      height: 50px;
+      left:30px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 34px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+  
+    .pac5 .sexo{
+      width: 190px;
+      height: 50px;
+      left:30px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 24px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+    .pac5 .ult-con{
+      width: 210px;
+      height: 50px;
+      left:30px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 24px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+  
+    .pac5 .con{
+      width: 190px;
+      height: 50px;
+      left:40px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 24px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+  
+    .pac5 img{
+      width: 70px;
+      height: 70px;
+      align-self: center;
+      justify-self: right;
+      padding-left: 160px;
+    }

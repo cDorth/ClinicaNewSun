@@ -60,7 +60,7 @@ body{
 #navBem{font-family: 'hanuman';
     color: white;
     position: absolute;
-    left: 48%;
+    left: 46%;
     top: 10px;
 
 }
@@ -131,6 +131,16 @@ transform: rotate(-45deg) scaleX(1.25);
   top: 100px;
   cursor: pointer;
 }
+.btnckI:hover:after{
+  z-index: 10000;
+  content: "";
+  position: absolute;
+  left: 50px;
+  height: 100%;
+  width: 8px;
+  background-color: white;
+ border-radius: 10px 10px 10px 10px;
+}
 .btnckC{
 background-color: rgba(255, 0, 0, 0);
 position: absolute;
@@ -141,6 +151,17 @@ left: 0;
 top: 173px;
 cursor: pointer;
 }
+.btnckC:hover:after{
+  z-index: 10000;
+  content: "";
+  position: absolute;
+  left: 50px;
+  height: 100%;
+  width: 8px;
+  background-color: white;
+ border-radius: 10px 10px 10px 10px;
+  
+}
 .btnckP{
  background-color: rgba(0, 255, 255, 0);
  position: absolute;
@@ -150,6 +171,17 @@ cursor: pointer;
  left: 0;
  top: 246px;
  cursor: pointer;
+}
+.btnckP:hover:after{
+  z-index: 10000;
+  content: "";
+  position: absolute;
+  left: 50px;
+  height: 100%;
+  width: 8px;
+  background-color: white;
+ border-radius: 10px 10px 10px 10px;
+  
 }
 a{
   text-decoration: none;
@@ -176,6 +208,90 @@ a:hover ~ a::before {
   width: 500px;
   height: 500px;
 }
+
+/* -------------------------------------------------------Tela Inicial------------------------ */
+
+#caixa {
+  border-radius: 20px;
+  position: absolute;
+  width: 1100px;
+  height: 600px;
+  background-image: url(imagens/fundoCardMed.jpg);
+  left: -450%;
+  top: 100px;
+}
+#inicial:checked ~ #caixa{
+  left: 450px;
+}
+
+#foto {
+  width: 400px;
+  height: 390px;
+  border-radius: 100px;
+  position: relative;
+  left: 20px;
+  top: 90px;
+  z-index: 1;
+}
+
+.nomeC {
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  background-color: rgba(20, 48, 81);
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  top: 0px;
+  padding-inline: 27.3%;
+  border-radius: 19px 19px 0 0;
+  padding-top: 10px;
+
+}
+
+.cardEsq{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  top: 170px;
+  left: 470px;
+  
+}
+.cardDir{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  top: 170px;
+  left: 650px;
+}
+.contCard{
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+}
+.contDir{
+  color: white;
+  background-color:rgba(20, 48, 81);
+  padding-inline: 30px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.cardFund{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 20px;
+  background-color:rgba(20, 48, 81);
+}
+
+
+
+
+
 /* tela de consultas do medico------------------------------ */
 
 
@@ -242,11 +358,13 @@ a:hover ~ a::before {
 }
 #concluidas-rad:checked ~ .radio-cons .concluidas::before{
   left: -10px;
+  bottom: 1px;
   border-bottom-right-radius: 300px;
   box-shadow: 3px 3px 0px 3px #ffffff;
 }
 #concluidas-rad:checked ~ .radio-cons .concluidas::after{
   right: -10px;
+  bottom: 1px;
   border-bottom-left-radius: 300px;
   box-shadow: -3px 3px 0px 3px #ffffff;
   }
@@ -270,14 +388,18 @@ a:hover ~ a::before {
 }
 #realizar-rad:checked ~ .radio-cons .realizar::before{
   left: -10px;
+  bottom: 1px;
   border-bottom-right-radius: 300px;
   box-shadow: 3px 3px 0px 3px #ffffff;
 }
 #realizar-rad:checked ~ .radio-cons .realizar::after{
   right: -10px;
+  bottom: 1px;
   border-bottom-left-radius: 300px;
   box-shadow: -3px 3px 0px 3px #ffffff;
   }
+
+  /* -------------------------------Pacientes com consultas concluidas--------------------- */
 
  .pac{
     position: absolute;
@@ -302,8 +424,8 @@ a:hover ~ a::before {
   left: 70px;
 }
   .pac .perfil{
-    width: 75px;
-    height: 75px;
+    width: 255px;
+    height: 255px;
     background-color: black;
     clip-path: circle();
     margin-left: 24px;
@@ -369,8 +491,834 @@ a:hover ~ a::before {
   height: 70px;
   align-self: center;
   justify-self: right;
-  padding-left: 300px;
+  padding-left: 160px;
 }
 
+/* perfil2 */
+.pacc2{
+  position: absolute;
+  margin-top: 230px;
+  font-size: large;
+  font-family: sans-serif;
+  width: 90%;
+  height: 12vh;
+  left: -200%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(20, 48, 81);
+  box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+  display: flex;
+  -webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+#concluidas-rad:checked ~ .pacc2{
+left: 70px;
+}
+.pacc2 .perfil{
+  width: 255px;
+  height: 255px;
+  background-color: black;
+  clip-path: circle();
+  margin-left: 24px;
+  align-self: center;
+}
+.pacc2 .cara{
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-items: center;
+    background-color: transparent;
+    width: 60%;
+}
+
+.pacc2 .nome{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacc2 .info{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacc2 .ult-med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacc2 .med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacc2 img{
+width: 70px;
+height: 70px;
+align-self: center;
+justify-self: right;
+padding-left: 160px;
+}
+/* perfil3 */
+.pacc3{
+  position: absolute;
+  margin-top: 360px;
+  font-size: large;
+  font-family: sans-serif;
+  width: 90%;
+  height: 12vh;
+  left: -200%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(20, 48, 81);
+  box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+  display: flex;
+  -webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+#concluidas-rad:checked ~ .pacc3{
+left: 70px;
+}
+.pacc3 .perfil{
+  width: 255px;
+  height: 255px;
+  background-color: black;
+  clip-path: circle();
+  margin-left: 24px;
+  align-self: center;
+}
+.pacc3 .cara{
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-items: center;
+    background-color: transparent;
+    width: 60%;
+}
+
+.pacc3 .nome{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacc3 .info{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacc3 .ult-med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacc3 .med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacc3 img{
+width: 70px;
+height: 70px;
+align-self: center;
+justify-self: right;
+padding-left: 160px;
+}
+
+/* ------------------------------- FIM dos Pacientes com consultas concluidas--------------------- */
+
+/* ------------------------------- FIM dos Pacientes com consultas a realizar--------------------- */
+.pacR1{
+  position: absolute;
+  margin-top: 100px;
+  font-size: large;
+  font-family: sans-serif;
+  width: 90%;
+  height: 12vh;
+  left: -200%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(20, 48, 81);
+  box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+  display: flex;
+  -webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+#realizar-rad:checked ~ .pacR1{
+left: 70px;
+}
+.pacR1 .perfil{
+  width: 255px;
+  height: 255px;
+  background-color: black;
+  clip-path: circle();
+  margin-left: 24px;
+  align-self: center;
+}
+.pacR1 .cara{
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-items: center;
+    background-color: transparent;
+    width: 60%;
+}
+
+.pacR1 .nome{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacR1 .info{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacR1 .ult-med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacR1 .med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacR1 img{
+width: 70px;
+height: 70px;
+align-self: center;
+justify-self: right;
+padding-left: 160px;
+}
+
+/* perfil2 */
+.pacR2{
+position: absolute;
+margin-top: 230px;
+font-size: large;
+font-family: sans-serif;
+width: 90%;
+height: 12vh;
+left: -200%;
+background-color: rgba(255, 255, 255, 0);
+border-radius: 6px;
+border: 2px;
+border-style: solid;
+border-color: rgba(20, 48, 81);
+box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+display: flex;
+-webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+#realizar-rad:checked ~ .pacR2{
+left: 70px;
+}
+.pacR2 .perfil{
+  width: 255px;
+  height: 255px;
+background-color: black;
+clip-path: circle();
+margin-left: 24px;
+align-self: center;
+}
+.pacR2 .cara{
+  display: flex;
+  justify-content: space-evenly;
+  justify-self: center;
+  align-items: center;
+  background-color: transparent;
+  width: 60%;
+}
+
+.pacR2 .nome{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacR2 .info{
+margin-top: 3px;
+width: 190px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacR2 .ult-med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+.pacR2 .med{
+margin-top: 3px;
+width: 230px;
+height: 50px;
+left:30px;
+font-size: large;
+background-color: transparent;
+margin-left: 24px;
+align-self: center;
+color: rgba(20, 48, 81);
+}
+
+.pacR2 img{
+width: 70px;
+height: 70px;
+align-self: center;
+justify-self: right;
+padding-left: 160px;
+}
+
+/* ------------------------------- FIM dos Pacientes com consultas a realizar--------------------- */
+
+/* ----------tela historico de pacientes------- */
+.fundo-pac{
+  position: absolute;
+  width: 80%;
+  height: 100vh;
+  left: 200%;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+#pacientes:checked ~ .fundo-pac{
+  left: 10%;
+}
+
+.fundo-pac .pac1{
+  position: absolute;
+  margin-top: 30px;
+  font-family: sans-serif;
+  width: 90%;
+  height: 12vh;
+  background-color: white;
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(20, 48, 81);
+  box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+  display: flex;
+  -webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+
+
+.pac1 .perfil{
+  width: 255px;
+  height: 255px;
+  background-color: black;
+  clip-path: circle();
+  margin-left: 24px;
+  align-self: center;
+}
+.pac1 .cara{
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    background-color: transparent;
+    width: 65%;
+}
+
+.pac1 .nome{
+  width: 190px;
+  height: 50px;
+  left:30px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 34px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+
+.pac1 .sexo{
+  width: 190px;
+  height: 50px;
+  left:30px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 24px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+.pac1 .ult-con{
+  width: 210px;
+  height: 50px;
+  left:30px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 24px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+
+.pac1 .con{
+  width: 190px;
+  height: 50px;
+  left:40px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 24px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+
+.pac1 img{
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  justify-self: right;
+  padding-left: 160px;
+}
+
+/* perfil 2 */
+
+.fundo-pac .pac2{
+  position: absolute;
+  margin-top: 160px;
+  font-family: sans-serif;
+  width: 90%;
+  height: 12vh;
+  background-color: white;
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(20, 48, 81);
+  box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+  display: flex;
+  -webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+
+  .pac2 .perfil{
+    width: 255px;
+  height: 255px;
+    background-color: black;
+    clip-path: circle();
+    margin-left: 24px;
+    align-self: center;
+  }
+.pac2 .cara{
+      display: flex;
+      justify-content: space-evenly;
+      justify-self: center;
+      background-color: transparent;
+      width: 65%;
+}
+
+.pac2 .nome{
+    width: 190px;
+    height: 50px;
+    left:30px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 34px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+
+  .pac2 .sexo{
+    width: 190px;
+    height: 50px;
+    left:30px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 24px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+  .pac2 .ult-con{
+    width: 210px;
+    height: 50px;
+    left:30px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 24px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+
+  .pac2 .con{
+    width: 190px;
+    height: 50px;
+    left:40px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 24px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+
+  .pac2 img{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    justify-self: right;
+    padding-left: 160px;
+  }
+
+  /* perfil 3 */
+  .fundo-pac .pac3{
+    position: absolute;
+    margin-top: 290px;
+    font-family: sans-serif;
+    width: 90%;
+    height: 12vh;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgba(20, 48, 81);
+    box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+    display: flex;
+    -webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+    box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  }
+  
+    .pac3 .perfil{
+      width: 255px;
+      height: 255px;
+      background-color: black;
+      clip-path: circle();
+      margin-left: 24px;
+      align-self: center;
+    }
+  .pac3 .cara{
+        display: flex;
+        justify-content: space-evenly;
+        justify-self: center;
+        background-color: transparent;
+        width: 65%;
+  }
+  
+  .pac3 .nome{
+      width: 190px;
+      height: 50px;
+      left:30px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 34px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+  
+    .pac3 .sexo{
+      width: 190px;
+      height: 50px;
+      left:30px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 24px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+    .pac3 .ult-con{
+      width: 210px;
+      height: 50px;
+      left:30px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 24px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+
+    .pac3 .con{
+      width: 190px;
+      height: 50px;
+      left:40px;
+      font-size: large;
+      background-color: transparent;
+      margin-left: 24px;
+      align-self: center;
+      color: rgba(20, 48, 81);
+    }
+  
+    .pac3 img{
+      width: 70px;
+      height: 70px;
+      align-self: center;
+      justify-self: right;
+      padding-left: 160px;
+    }
+/* perfil4 */
+
+.fundo-pac .pac4{
+position: absolute;
+margin-top: 420px;
+font-family: sans-serif;
+width: 90%;
+height: 12vh;
+background-color: white;
+border-radius: 6px;
+border: 2px;
+border-style: solid;
+border-color: rgba(20, 48, 81);
+box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+display: flex;
+-webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+
+.pac4 .perfil{
+  width: 255px;
+  height: 255px;
+  background-color: black;
+  clip-path: circle();
+  margin-left: 24px;
+  align-self: center;
+}
+.pac4 .cara{
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    background-color: transparent;
+    width: 65%;
+}
+
+.pac4 .nome{
+  width: 190px;
+  height: 50px;
+  left:30px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 34px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+
+.pac4 .sexo{
+  width: 190px;
+  height: 50px;
+  left:30px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 24px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+.pac4 .ult-con{
+  width: 210px;
+  height: 50px;
+  left:30px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 24px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+
+.pac4 .con{
+  width: 190px;
+  height: 50px;
+  left:40px;
+  font-size: large;
+  background-color: transparent;
+  margin-left: 24px;
+  align-self: center;
+  color: rgba(20, 48, 81);
+}
+
+.pac4 img{
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  justify-self: right;
+  padding-left: 160px;
+}
+
+/* perfil5 */
+
+.fundo-pac .pac5{
+  position: absolute;
+  margin-top: 550px;
+  font-family: sans-serif;
+  width: 90%;
+  height: 12vh;
+  background-color: white;
+  border-radius: 6px;
+  border: 2px;
+  border-style: solid;
+  border-color: rgba(20, 48, 81);
+  box-shadow: 10 10px 20px 0 rgba(20, 48, 81);
+  display: flex;
+  -webkit-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+  box-shadow: 0px 0px 79px -50px rgba(0,0,0,0.58);
+}
+
+  .pac5 .perfil{
+    width: 255px;
+    height: 255px;
+    background-color: black;
+    clip-path: circle();
+    margin-left: 24px;
+    align-self: center;
+  }
+.pac5 .cara{
+      display: flex;
+      justify-content: space-evenly;
+      justify-self: center;
+      background-color: transparent;
+      width: 65%;
+}
+
+.pac5 .nome{
+    width: 190px;
+    height: 50px;
+    left:30px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 34px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+
+  .pac5 .sexo{
+    width: 190px;
+    height: 50px;
+    left:30px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 24px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+  .pac5 .ult-con{
+    width: 210px;
+    height: 50px;
+    left:30px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 24px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+
+  .pac5 .con{
+    width: 190px;
+    height: 50px;
+    left:40px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 24px;
+    align-self: center;
+    color: rgba(20, 48, 81);
+  }
+
+  .pac5 img{
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    justify-self: right;
+    padding-left: 160px;
+  }
 
 

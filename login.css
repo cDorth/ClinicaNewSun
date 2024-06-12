@@ -109,7 +109,7 @@ a{
         margin-top: 50px;
     }
    input::placeholder{
-    color: #E3EEF6;
+    color: #e3eef695;
    }
     .btns{
         position: absolute;
@@ -126,24 +126,34 @@ a{
         padding: 0;
         background-color: transparent;
       }
-    #cadastrar,#entrar{
-        border-radius: 20px;
-        width: 180px;
-        height: 65px;
-        font-size: 20px;
-        border-style: solid;
-    }
-    #cadastrar a{
+
+    #cadastrar{
         background-color: #E3EEF6;
         border-color: #143051;
         color: #143051;
-        border-width:2px;
+        border-style: solid;
+        border-width:1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        border-radius: 20px;
+        width: 180px;
+        height: 62px;
+        font-size: 23px;
+
     }
     #entrar{
         background-color: #143051;
         border-color: #E3EEF6;
         color: #E3EEF6;
         border-width:2px;
+        cursor: pointer;
+        border-radius: 20px;
+        width: 180px;
+        height: 65px;
+        font-size: 20px;
+        border-style: solid;
     }
         #iconEmail{
             position: absolute;
