@@ -26,6 +26,24 @@ body {
     background-color: rgba(20, 48, 81);
 }
 
+
+
+
+body::-webkit-scrollbar {
+    width: 10px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba( 20,48,81);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);   
+    border-radius: 20px;       
+    border: 3px solid rgba( 20,48,81);  
+  }
+
+
 /* -----------------------------------------------------------------navBar */
 
 
@@ -66,7 +84,7 @@ body {
 #iconLogout {
     position: absolute;
     top: 20px;
-    right: 50px;
+    left: 50px;
     width: 30px;
 }
 
@@ -79,129 +97,7 @@ body {
 
 }
 
-.container {
-    position: absolute;
-    top: 63px;
-    left: -30px;
-}
 
-.menu-click {
-    position: absolute;
-    z-index: 1000;
-    width: 35px;
-    height: 35px;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.container .checkbox-menu {
-    position: absolute;
-    z-index: 999;
-    width: 35px;
-    height: 35px;
-}
-
-.container .checkbox-menu span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: white;
-    border-radius: 10px;
-    transition: all ease .2s;
-}
-
-.container .menu-click:checked~.checkbox-menu span:nth-child(1) {
-    transform-origin: 0% 0%;
-    transform: rotate(45deg) scaleX(1.25);
-}
-
-.container .menu-click:checked~.checkbox-menu span:nth-child(2) {
-    opacity: 0;
-}
-
-.container .menu-click:checked~.checkbox-menu span:nth-child(3) {
-    transform-origin: 0% 100%;
-    transform: rotate(-45deg) scaleX(1.25);
-}
-
-.container ul {
-    position: absolute;
-    z-index: 998;
-    left: 0;
-    top: 0;
-    width: 300px;
-    background-color: rgba(20, 48, 81);
-    height: calc(100vh - 160px);
-    padding-top: 100px;
-    padding-left: 40px;
-    margin-left: -370px;
-    transition: all ease .2s;
-    margin-top: 47px;
-    display: flex;
-    flex-direction: column;
-    color: rgba(20, 48, 81);
-}
-
-.btnckI {
-    position: absolute;
-    z-index: 1000;
-    width: 340px;
-    height: 43px;
-    background-color: rgba(0, 0, 255, 0);
-    left: 0;
-    top: 100px;
-    cursor: pointer;
-}
-
-.btnckC {
-    background-color: rgba(255, 0, 0, 0);
-    position: absolute;
-    z-index: 1000;
-    width: 340px;
-    height: 43px;
-    left: 0;
-    top: 173px;
-    cursor: pointer;
-}
-
-.btnckP {
-    background-color: rgba(0, 255, 255, 0);
-    position: absolute;
-    z-index: 1000;
-    width: 340px;
-    height: 43px;
-    left: 0;
-    top: 246px;
-    cursor: pointer;
-}
-
-.invisivelRadio {
-    left: -300%;
-    position: absolute;
-}
-
-a {
-    text-decoration: none;
-    color: rgba(20, 48, 81);
-    background-color: #E3EEF6;
-    width: 100%;
-    padding-left: 20px;
-    margin-left: -20px;
-    margin-bottom: 30px;
-    padding-block: 10px;
-    font-size: 20px;
-}
-
-.container .menu-click:checked~ul {
-    margin-left: -50px;
-}
-
-.container #pacientes:checked~.contNav {
-    background-color: rgb(185, 255, 176);
-    width: 500px;
-    height: 500px;
-}
 
 /* tela de consultas do medico------------------------------ */
 .fundo-cons {
@@ -242,7 +138,7 @@ a {
     font-family: 'arvo';
 }
 .nome-btn h1{   /*talvez dar um jeito de tirar o bold*/
-    font-size: 8.5vh; /*da font ou p com tamanho diferente*/
+    font-size: 6vh; /*da font ou p com tamanho diferente*/
     font-family: 'arvo';
 }
 #infos{
@@ -250,17 +146,24 @@ a {
     padding-right: 1vh;
 }
 
-.infos2 button{
-    background-color: #ffffff;
-    height: 6.5vh;
+.infos2 a{
+    height: 20px;
     width: 11vw;
     border-radius: 15px;
-    cursor: pointer;
-    
+    text-decoration: none;
 }
-.infos2 button:hover{
-    background-color: #143051;
-    color: #ffffff;
+.infos2 a:hover{
+    background-color: white;
+    color: rgba(20, 48, 81);
+    border:  2px solid rgba(20, 48, 81);
+}
+
+.a-link{
+    color: white;
+    background-color: rgba(20, 48, 81);
+    font-size: 20px;
+    padding: 20px;
+    margin-left:600px;
 }
 
 

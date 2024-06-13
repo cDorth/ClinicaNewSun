@@ -5,7 +5,7 @@
 
 
 
-.hanuman-thin {
+ .hanuman-thin {
     font-family: "Hanuman", serif;
     font-weight: 100;
     font-style: normal;
@@ -163,6 +163,12 @@ body::-webkit-scrollbar {
     cursor: pointer;
     transition: 0.5s;}
     
+    #iconLogout {
+      position: absolute;
+      top: 3px;
+      left: 120%;
+      width: 30px;
+  }
 
 /*----------------------CARROSSEL------------------------------*/
 
@@ -606,9 +612,6 @@ ESPECIALIDADES
     bottom:1vh;
     border-radius: 5%;
   }
-  .medico4 img{
-    border-radius: 25px 25px 0 0 ;
-  }
   .medico4 .medico3_texto p,ul{
     text-align: left;
     text-indent: 20px;
@@ -619,7 +622,9 @@ ESPECIALIDADES
     font-size: 25px;
     font-family: 'arvo';
   }
-
+  .medico4 img{
+    border-radius: 25px 25px 0 0 ;
+  }
   .medico4_texto li{
     padding-top: 15px;
     padding-right: 100px;}

@@ -1,4 +1,12 @@
+/*HANUMAM*/        @import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+/*POPPINS*/        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*ARVO*/        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ /*SANCHEZ*/       @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@0;1&display=swap');
+
+/*-------------FONTES----------------*/
+
 *{
+  font-family: 'arvo';
   margin: 0;
   padding: 0;
 }
@@ -9,16 +17,10 @@ body{
  backdrop-filter: blur(12px);
  background-color:rgba(20, 48, 81);
  overflow: hidden;
-
 }
 /* -----------------------------------------------------------------navBar */
 
 
-
-
-
-
-/*------------------------PARTE DO MEIO-----------*/
 .navBar{
   margin-top: 0px;
   height: 65px;
@@ -58,7 +60,7 @@ body{
 #navBem{font-family: 'hanuman';
   color: white;
   position: absolute;
-  left: 48%;
+  left: 46%;
   top: 10px;
 
 }
@@ -129,6 +131,16 @@ left: 0;
 top: 100px;
 cursor: pointer;
 }
+.btnckI:hover:after{
+z-index: 10000;
+content: "";
+position: absolute;
+left: 50px;
+height: 100%;
+width: 8px;
+background-color: white;
+border-radius: 10px 10px 10px 10px;
+}
 .btnckC{
 background-color: rgba(255, 0, 0, 0);
 position: absolute;
@@ -138,6 +150,17 @@ height: 43px;
 left: 0;
 top: 173px;
 cursor: pointer;
+}
+.btnckC:hover:after{
+z-index: 10000;
+content: "";
+position: absolute;
+left: 50px;
+height: 100%;
+width: 8px;
+background-color: white;
+border-radius: 10px 10px 10px 10px;
+
 }
 .btnckP{
 background-color: rgba(0, 255, 255, 0);
@@ -149,59 +172,151 @@ left: 0;
 top: 246px;
 cursor: pointer;
 }
-.invisivelRadio{
-left: -300%;
+.btnckP:hover:after{
+z-index: 10000;
+content: "";
 position: absolute;
+left: 50px;
+height: 100%;
+width: 8px;
+background-color: white;
+border-radius: 10px 10px 10px 10px;
+
 }
 a{
 text-decoration: none;
-color: rgba(20, 48, 81);
-background-color: #E3EEF6;
+color: rgb(255, 255, 255);
 width: 100%;
 padding-left:20px;
-margin-left:-20px;
+margin-left:25px;
 margin-bottom: 30px;
 padding-block: 10px;
 font-size: 20px;
 }
-
+a:hover ~ a::before {
+content: "";
+width: 10px;
+height: 30px;
+background-color: #ffffff;
+}
 
 .container .menu-click:checked ~ ul{
   margin-left: -50px;
-}
-.background .oi p{
-opacity: 0;
-}
-
-
-.background .oi .TCHAU{
-width: 20px;
-height: 20px;
-background-color: red;
-position: absolute;
-}
-#consultas:checked ~ .background .oi .TCHAU {
-position: absolute;
-width: 100%;
-height: 100%;
-background-color: rgb(255, 255, 255);
-opacity: 100%;
-}
-#pacientes:checked ~ .perfil > .ola-dr {
-background-color: rgb(47, 255, 0);
-color: white;
-font-size: 50px;
 }
 .container #pacientes:checked ~ .contNav{
 background-color: rgb(185, 255, 176);
 width: 500px;
 height: 500px;
 }
-/* BOAS VINDAS - PERFIL DO MEDICO */
 
 
 
 
+/* tela de consultas do medico------------------------------ */
+
+
+.fundo-cons{
+position: absolute;
+width: 80%;
+height: 100vh;
+left: 10%;
+margin-top: 10px;
+background-color: white;
+border-radius: 2%;
+overflow: visible;
+}
+
+.invisivel {
+display: none;
+}
+.radio-cons{
+position: absolute;
+width: 100%;
+height: 50px;
+top: 0;
+background-color: rgba(20, 48, 81);
+color: white;
+font-size: 20px;
+border-radius: 10px 10px 0 0;
+opacity: 100%;
+}
+.concluidas{
+position: absolute;
+left: 50px;
+top: 15px;
+z-index: 2;
+cursor: pointer;
+opacity: 100%;
+}
+.realizar{
+position: absolute;
+left: 200px;
+top: 15px;
+cursor: pointer;
+opacity: 100%;
+}
+#concluidas-rad:checked ~ .radio-cons .concluidas{
+background-color: rgb(255, 255, 255);
+color: rgba(20, 48, 81);
+padding: 12px;
+position: absolute;
+top:1.5px;
+left: 38.5px;
+border-radius: 10px 10px 0 0 ;
+}
+#concluidas-rad:checked ~ .radio-cons .concluidas::before,
+#concluidas-rad:checked ~ .radio-cons .concluidas::after{
+content: "";
+position: absolute;
+width: 10px;
+height: 10px;
+background-color: rgba(20, 48, 81);
+bottom: 0;
+}
+#concluidas-rad:checked ~ .radio-cons .concluidas::before{
+left: -10px;
+bottom: 1px;
+border-bottom-right-radius: 300px;
+box-shadow: 3px 3px 0px 3px #ffffff;
+}
+#concluidas-rad:checked ~ .radio-cons .concluidas::after{
+right: -10px;
+bottom: 1px;
+border-bottom-left-radius: 300px;
+box-shadow: -3px 3px 0px 3px #ffffff;
+}
+#realizar-rad:checked ~ .radio-cons .realizar{
+background-color: rgb(255, 255, 255);
+color: rgba(20, 48, 81);
+padding: 12px;
+position: absolute;
+top:1.5px;
+left: 188.5px;
+border-radius: 10px 10px 0 0 ;
+}
+#realizar-rad:checked ~ .radio-cons .realizar::before,
+#realizar-rad:checked ~ .radio-cons .realizar::after{
+content: "";
+position: absolute;
+width: 10px;
+height: 10px;
+background-color: rgba(20, 48, 81);
+bottom: 0;
+}
+#realizar-rad:checked ~ .radio-cons .realizar::before{
+left: -10px;
+bottom: 1px;
+border-bottom-right-radius: 300px;
+box-shadow: 3px 3px 0px 3px #ffffff;
+}
+#realizar-rad:checked ~ .radio-cons .realizar::after{
+right: -10px;
+bottom: 1px;
+border-bottom-left-radius: 300px;
+box-shadow: -3px 3px 0px 3px #ffffff;
+}
+
+/* -------------------------------Pacientes com consultas concluidas--------------------- */
 
 .pac{
   position: absolute;
@@ -672,3 +787,4 @@ align-self: center;
 justify-self: right;
 padding-left: 160px;
 }
+

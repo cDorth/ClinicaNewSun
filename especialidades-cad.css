@@ -49,10 +49,6 @@
   text-decoration: none;
   
   }
-
- 
-
-
   .login-link:hover{
       color: rgba(191, 143, 91, 1);
       text-decoration: none;
@@ -149,45 +145,6 @@ body::-webkit-scrollbar-thumb {
   /* creates padding around scroll thumb */
 }
 
-
-/* -------Fazendo o Botão de login------- */
-#login{
-  position: absolute;
-  right: -240px;
-  top: 0.1px;
-  width: 14vh;
-  height: 40px;
-  display: flex;
-  align-items:center;
-  justify-content:center;
-  background-color:rgba(191, 143, 91, 1) ;
-  color: rgba( 20,48,81);
-  font-size: 20px;
-  border: 3px;
-  border-color: transparent;
-  border-radius:20px;
-  border-style: solid;
-  font-family: 'arvo';
-  font-weight: bold; 
-  text-decoration: none;
-  }
-
-#login:hover{
-  transform: scale(1.1);
-  background-color: transparent;
-  color: rgba(191, 143, 91, 1);
-  border-color:rgba(191, 143, 91, 1);
-  cursor: pointer;
-  transition: 0.5s;}
-
-/*.rodape{
-    height: 100px;
-    width: 100%;
-    background-color: rgba(20, 48, 81);
-    display: flex;
-    position: absolute;
-    bottom: 0;
-}*/
 
 /*---------------------------------------------------------------------*/
 

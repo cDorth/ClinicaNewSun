@@ -151,6 +151,18 @@ a{
         justify-content: center;
         font-size: 23px;
     }
+    #voltar:hover{
+        border-style: solid;
+        background-color: #E3EEF6;
+        border-color: #143051;
+        color: #143051;
+        border-width:1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        transform: scale(1.05);
+    }
     #entrar{
         border-style: solid;
         background-color: #E3EEF6;
@@ -158,7 +170,15 @@ a{
         border-color: #143051;
         border-width:2px;
         cursor: pointer;
-
+    }
+    #entrar:hover{
+        border-style: solid;
+        background-color: #143051;
+        color:  #E3EEF6;
+        border-color: #E3EEF6;
+        border-width:2px;
+        cursor: pointer;
+        transform: scale(1.05);
     }
         #iconEmail{
             position: absolute;

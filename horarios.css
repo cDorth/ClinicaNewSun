@@ -15,15 +15,11 @@ body{
     backdrop-filter: blur(3px);
     background-color: rgba(20, 48, 81);
     font-family: 'arvo';
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
  /* --------------------CONTAINER-------------- */
-.tudo{
+ .tudo{
     display: flex;
     justify-content: center;
-    padding-top: 15vh;
 }
 .container{
     height: 54vh;
@@ -33,22 +29,22 @@ body{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    border: solid 4px #143051;
     border-radius: 20px;
 }
-
-h1, h2{
-    color: ;
+.cabecalho h1, h2{
+    color: white;
 }
-
+.container h1{
+    padding-top: 3.5vh;
+}
 .container h2{
-    padding-bottom: 50px;
+    padding-bottom: 3.5vh;
 }
 
 /* ----------------- HORARIOS ---------------------- */ 
 
 .horarios{
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     background-color: white;
     border-radius: 0 0 20px 20px;
@@ -64,7 +60,13 @@ h1, h2{
     background-color: white;
     border-radius: 15px;
     font-size: 20px;
+    cursor: pointer;
 }
+#hora:hover{
+    background-color: #143051;
+    color: white;
+}
+
 .per{
     display: flex;
     justify-content: flex-start;
@@ -77,5 +79,20 @@ h1, h2{
 }
 
 .periodos{
-    padding-bottom: 50px;
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+}
+/* ------------BOTÃO VOLTAR --------------*/
+header{
+    margin-top: 0 auto;
+    height: 3vh;
+    width: 100%;
+}
+
+.sair{
+    height: 3vh;
+    width: 1.5vw;
+    margin-top: 0 auto;
+    height: 65px;
+    width: 100%;
 }

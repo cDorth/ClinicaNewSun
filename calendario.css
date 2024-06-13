@@ -17,10 +17,8 @@ body{
     padding: 0;
 }
 .tudo{
-
     display: flex;
     justify-content: center;
-    padding-top: 13vh;
 }
 .container{
     height: 60vh;
@@ -59,6 +57,17 @@ body{
     font-family: 'arvo';
     color: #143051;
 }
+.dom{
+    height: 35px;
+    width: 14.2%;
+    display: flex;
+    justify-content: center;
+    font-size: 5.2vh;
+    font-family: 'arvo';
+    color: #143051;
+    opacity: 50%;
+}
+
 /* ----- CALENDARIO MESMO ------*/
 .calendario-foot{
     background-color: white;
@@ -71,10 +80,7 @@ body{
     border-radius: 0 0 20px 20px;
 }
 /*-------------------- DIAS E SEMANAS ----------- */
-.a-dia{
-    text-decoration: none;
-    color: #143051;
-}
+
 .dia{
     display: flex;
     justify-content: center;
@@ -92,12 +98,21 @@ body{
     color: white;
     border-radius: 50px;
 }
-.a-dia:hover{
+.domingo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vh; 
+    font-family: 'arvo';
+    width: 14.28%;
+    border: none;
+    color: #143051;
     text-decoration: none;
-    background-color: #143051;
-    color: white;
-    border-radius: 50px;
+    cursor: default;
+    opacity: 50%;
 }
+
 .semana1{
     height: 9.2vh;
     width: 100%;
@@ -133,4 +148,12 @@ body{
     width: 100%;
     display: flex;
     justify-content: flex-start;
+}
+/* ------------BOTÃO VOLTAR --------------*/
+.sair{
+    height: 3vh;
+    width: 1.5vw;
+    margin-top: 0px;
+    height: 65px;
+    width: 100%;
 }
