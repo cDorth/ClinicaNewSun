@@ -16,6 +16,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'arvo';
 }
 
 body {
@@ -59,14 +60,23 @@ body::-webkit-scrollbar {
 
 #imgNav {
     width: 170px;
-    height: 170px;
-    top: 4px;
+    height: 85px;
+    top: 38.5px;
     position: relative;
+    z-index: 1;
+}
+#logoinicio{
+    height: 20px;
+    width: 40px;
+    z-index: 1;
+}
+#voltar{
+    z-index: 2;
 }
 
 #hrNav {
     position: relative;
-    top: -10px;
+    top: 31.7px;
     width: 40px;
     transform: rotate(90deg);
     border-color: white;
@@ -142,30 +152,45 @@ body::-webkit-scrollbar {
     font-family: 'arvo';
 }
 #infos{
-    height: auto;
     padding-right: 1vh;
 }
 
-.infos2 a{
-    height: 20px;
-    width: 11vw;
-    border-radius: 15px;
-    text-decoration: none;
+.infos2{
+    height: 35vh;
+    width: 50vw;;
 }
-.infos2 a:hover{
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a-link{
+    height: 6.5vh;
+    width: 13vw;
+    font-size: 3vh;
+    text-decoration: none;
+    background-color: rgba(20, 48, 81);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.a-link:hover{
     background-color: white;
     color: rgba(20, 48, 81);
-    border:  2px solid rgba(20, 48, 81);
+    border: solid rgba(20, 48, 81) 2px;
 }
 
-.a-link{
-    color: white;
-    background-color: rgba(20, 48, 81);
-    font-size: 20px;
-    padding: 20px;
-    margin-left:600px;
+.space{
+    height: 35vh;
+    width: 2px;
+    background-color: rgba( 20,48,81);
+    border: none;
+    margin-left: 5px;
 }
-
 
 /* PROVISORIO O QUE EU FIZ EM BAIXO*/
 .infos3{
@@ -174,4 +199,12 @@ body::-webkit-scrollbar {
     align-items: flex-start;
     flex-direction: column;
     padding: 10px;
+}
+.sair #voltar{
+    height: 106px;
+    width: 50%;
+    z-index: 5;
+}
+#gustavo{
+    border-radius: 20px 20px 0 0 ;
 }

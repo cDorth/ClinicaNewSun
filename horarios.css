@@ -20,6 +20,7 @@ body{
  .tudo{
     display: flex;
     justify-content: center;
+    margin-top: 5vh;
 }
 .container{
     height: 54vh;

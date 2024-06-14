@@ -3,35 +3,6 @@
 /*POPPINS*/        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*ARVO*/        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  /*SANCHEZ*/       @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@0;1&display=swap');
-.hanuman-thin {
-  font-family: "Hanuman", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.hanuman-light {
-  font-family: "Hanuman", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.hanuman-regular {
-  font-family: "Hanuman", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.hanuman-bold {
-  font-family: "Hanuman", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.hanuman-black {
-  font-family: "Hanuman", serif;
-  font-weight: 900;
-  font-style: normal;
-}
 
 
 
@@ -68,6 +39,7 @@ body {
   height: 350vh;
   overflow-x: hidden;
   overflow-y: auto;
+  
 }
 
 div {
@@ -213,6 +185,8 @@ text-decoration: none;
   border: 3px;
   border-color: transparent;
   border-radius: 20px;
+  font-size: 13px;
+  font-family: 'arvo';
 }
 
 #retina:hover,#catarata:hover,#glaucoma:hover,#oftalmopediatria:hover,#refrativa:hover,#cornea:hover,#miopia:hover,#hipermetropia:hover{
@@ -290,7 +264,7 @@ text-decoration: none;
   padding-left: 25px;
   color: rgba( 20,48,81);
   font-size: 45px;
-  font-family: 'Hanuman';
+  font-family: 'arvo';
 }
 .Doenças p{
   width: 90%;
@@ -299,7 +273,7 @@ text-decoration: none;
   padding-left: 25px;
   color: rgb(0, 0, 0);
   font-size: 23px;
-  font-family: 'Hanuman';}
+  font-family: 'arvo';}
 
 .Retina{
   width: 80%;
@@ -490,9 +464,19 @@ footer{
   top: 10px;
 }
 .infos{
-  margin-top: 20px;
+  margin-top: 25px;
+}
+.contato{
+  margin-top: 25px;
+}
+.redes-sociais{
+  margin-top: 25px;
 }
 
+.infos a{
+  color: white;
+  text-decoration: none;
+}
 
 .hr-space{
   height: 0.01vh;

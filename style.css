@@ -49,6 +49,7 @@ body{
     height: 350vh;
     overflow-x: hidden;
     overflow-y: auto;
+    font-family: 'arvo';
 }
 div{
     position: relative;
@@ -508,10 +509,10 @@ ESPECIALIDADES
 
   .medico1 .medico1_texto p,ul{
     text-align: left;
-    text-indent: 20px;
-    width: 28ch;
+    text-indent: 10px;
+    width: 20ch;
     padding-top: 9px;
-    margin-left: 50px;
+    margin-left: 0px;
     color:fff;
     font-size: 25px;
     font-family: 'arvo';
@@ -519,7 +520,7 @@ ESPECIALIDADES
 
   .medico1_texto li{
     padding-top: 15px;
-    padding-right: 100px;}
+    padding-right: 122px;}
   
   .medico1:hover .medico1_texto {
     visibility: visible;
@@ -541,10 +542,10 @@ ESPECIALIDADES
   }
   .medico2 .medico2_texto p,ul{
     text-align: left;
-    text-indent: 20px;
+    text-indent: 0px;
     width: 28ch;
     padding-top: 9px;
-    margin-left: 50px;
+    margin-left: 0px;
     color:fff;
     font-size: 25px;
     font-family: 'arvo';
@@ -552,7 +553,7 @@ ESPECIALIDADES
 
   .medico2_texto li{
     padding-top: 15px;
-    padding-right: 100px;}
+    padding-right: 122px;}
   
   .medico2:hover .medico2_texto {
     visibility: visible;
@@ -586,7 +587,7 @@ ESPECIALIDADES
 
   .medico3_texto li{
     padding-top: 15px;
-    padding-right: 100px;}
+    padding-right: 122px;}
   
   .medico3:hover .medico3_texto {
     visibility: visible;
@@ -622,7 +623,7 @@ ESPECIALIDADES
 
   .medico4_texto li{
     padding-top: 15px;
-    padding-right: 100px;}
+    padding-right: 122px;}
   
   .medico4:hover .medico4_texto {
     visibility: visible;
@@ -654,6 +655,11 @@ footer{
 .rodape p{
     font-family: 'arvo';
     font-size: 18px;
+}
+
+.infos a{
+  color: white;
+  text-decoration: none;
 }
 
 .hr-espaco{

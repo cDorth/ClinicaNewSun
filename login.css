@@ -7,12 +7,13 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'arvo';
 }
 body{
    background-image: url(imagens/backgroudLogin1.png);
    background-repeat: no-repeat;
    background-size: cover;
-
+   font-family: 'arvo';
 }
 
 a{
@@ -57,7 +58,7 @@ a{
     right: 50px;
     width: 30px;
 }
-#navBem{font-family: 'hanuman';
+#navBem{font-family: 'arvo';
     color: white;
     position: absolute;
     left: 48%;

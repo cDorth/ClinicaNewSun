@@ -12,6 +12,7 @@
 *{
   margin: 0;
   padding: 0;
+  
 }
 body{
   background-image: url(imagens/fundo-agendamento.png);
@@ -61,7 +62,7 @@ body{
   right: 50px;
   width: 30px;
 }
-#navBem{font-family: 'hanuman';
+#navBem{font-family: 'arvo';
   color: white;
   position: absolute;
   left: 35%;
@@ -109,4 +110,9 @@ border-radius: 2%;
   align-items: center;
   text-align: center;
   text-decoration: none;
+}
+#consultas:hover{
+  background-color: white;
+  color: rgba(20, 48, 81);
+  border: solid rgba(20, 48, 81) 2px;
 }
